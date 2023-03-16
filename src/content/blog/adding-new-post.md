@@ -3,7 +3,6 @@ author: Sat Naing
 date: 2022-09-23T15:22:00Z
 title: Adding new posts in AstroPaper theme
 postSlug: adding-new-posts-in-astropaper-theme
-featured: true
 draft: false
 tags:
   - docs
@@ -30,7 +29,6 @@ Here is the list of frontmatter property for each post.
 | **_pubDatetime_** | Published datetime in ISO 8601 format.                                          | required<sup>\*</sup>                         |
 | **_author_**      | Author of the post.                                                             | default = SITE.author                         |
 | **_postSlug_**    | Slug for the post. Will automatically be slugified.                             | default = slugified title                     |
-| **_featured_**    | Whether or not display this post in featured section of home page               | default = false                               |
 | **_draft_**       | Mark this post 'unpublished'.                                                   | default = false                               |
 | **_tags_**        | Related keywords for this post. Written in array yaml format.                   | default = others                              |
 | **_ogImage_**     | OG image of the post. Useful for social media sharing and SEO.                  | default = SITE.ogImage or generated SVG image |
@@ -65,7 +63,6 @@ title: The title of the post
 author: your name
 pubDatetime: 2022-09-21T05:17:19Z
 postSlug: the-title-of-the-post
-featured: true
 draft: false
 tags:
   - some
