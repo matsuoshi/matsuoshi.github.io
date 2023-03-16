@@ -1,5 +1,5 @@
 export interface Props {
-  datetime: string | Date;
+  datetime: Date;
   size?: "sm" | "lg";
   className?: string;
 }

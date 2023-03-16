@@ -3,7 +3,7 @@ import { z } from "astro:content";
 export const blogSchema = z
   .object({
     author: z.string().optional(),
-    pubDatetime: z.date(),
+    date: z.string().or(z.date()).transform((val) => new Date(val)),
     title: z.string(),
     postSlug: z.string().optional(),
     featured: z.boolean().optional(),

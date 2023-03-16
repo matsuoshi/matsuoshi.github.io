@@ -1,7 +1,7 @@
 ---
 title: "助動詞 Auxiliary verb"
 description: ""
-pubDatetime: 2023-02-17T09:00:00Z
+date: 2023-02-17T09:00:00Z
 tags: [english, grammar]
 ---
 

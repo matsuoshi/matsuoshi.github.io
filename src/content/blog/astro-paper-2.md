@@ -1,6 +1,6 @@
 ---
 author: Sat Naing
-pubDatetime: 2023-01-30T15:57:52.737Z
+date: 2023-01-30T15:57:52.737Z
 title: AstroPaper 2.0
 postSlug: astro-paper-2
 featured: true
