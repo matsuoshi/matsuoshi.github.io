@@ -9,12 +9,12 @@ import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
-import { SOCIALS } from "@config";
-import { SITE } from "@config";
+import { SITE, SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
+console.log(sortedPosts);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -22,7 +22,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <Layout>
   <Header />
   <main id="main-content">
-
     <section id="recent-posts">
       <h2>Recent Posts</h2>
       <ul>
