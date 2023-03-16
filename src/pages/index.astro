@@ -27,10 +27,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <ul>
         {
           sortedPosts.map(
-            ({ data }, index) =>
+            ({ slug, data }, index) =>
               index < SITE.postPerPage && (
                 <Card
-                  href={`/posts/${slugify(data)}`}
+                  href={`/posts/${slugify(slug, data)}`}
                   frontmatter={data}
                   secHeading={false}
                 />
