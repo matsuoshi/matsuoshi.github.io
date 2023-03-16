@@ -2,14 +2,14 @@ import { z } from "astro:content";
 
 export const blogSchema = z
   .object({
-    author: z.string().optional(),
-    date: z.string().or(z.date()).transform((val) => new Date(val)),
     title: z.string(),
+    date: z.string().or(z.date()).transform((val) => new Date(val)),
+    tags: z.array(z.string()).default(["others"]),
+    description: z.string().optional().default(''),
+    author: z.string().optional(),
     postSlug: z.string().optional(),
     draft: z.boolean().optional(),
-    tags: z.array(z.string()).default(["others"]),
-    ogImage: z.string().optional(),
-    description: z.string(),
+    image: z.string().optional()
   })
   .strict();
 
