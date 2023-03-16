@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
+    "create": "mkdir -p src/content/blog/`date '+%Y/%m'` && echo '---\ntitle: \"\"\ndate: '`date '+%Y-%m-%d'`'\ntags: []\n---' >> src/content/blog/`date '+%Y/%m'`/post.md",
     "format:check": "prettier --plugin-search-dir=. --check .",
     "format": "prettier --plugin-search-dir=. --write .",
     "cz": "cz",
