@@ -2,7 +2,7 @@
 title: TypeScript で配列の重複を取り除く (unique化)
 date: 2022/05/01
 tags: [typescript, programming, javascript]
-image: /images/2022/05/programming.jpg
+image: /static/images/2022/05/programming.jpg
 ---
 
 ## TypeScript で配列を unique にしようとしたら

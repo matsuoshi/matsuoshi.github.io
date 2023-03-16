@@ -1,8 +1,8 @@
 ---
 title: ONKYO のスマートスピーカー VC-GX30 を試している
 date: 2022/07/10
-tags: [music, speaker, gadget]
-image: /images/2022/07/gx30.jpg
+tags: [music, speaker, audio, gadget]
+image: /static/images/2022/07/gx30.jpg
 ---
 
 ## オンキヨーのスマートスピーカー VC-GX30

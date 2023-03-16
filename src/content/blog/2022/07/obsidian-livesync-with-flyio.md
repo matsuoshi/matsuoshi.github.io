@@ -2,7 +2,7 @@
 title: Obsidian のデータ同期環境を Fly.io で作る
 date: 2022/07/22
 tags: [tools, application]
-image: /images/2022/07/obsidian.png
+image: /static/images/2022/07/obsidian.png
 ---
 
 マークダウンベースのメモアプリ、Obsidian を最近使っています。

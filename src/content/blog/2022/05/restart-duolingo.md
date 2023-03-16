@@ -2,7 +2,7 @@
 title: Duolingo で英語の勉強を再開した
 date: 2022/05/09
 tags: [english, application]
-image: /images/2022/05/duolingo1.jpg
+image: /static/images/2022/05/duolingo1.jpg
 ---
 
 ## 英語をアプリで勉強するぞ

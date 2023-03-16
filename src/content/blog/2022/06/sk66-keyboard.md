@@ -2,7 +2,7 @@
 title: スペースバーが3つに分かれたキーボード SK66 を買った
 date: 2022/06/15
 tags: [keyboard]
-image: /images/2022/06/sk66.jpg
+image: /static/images/2022/06/sk66.jpg
 ---
 
 買った

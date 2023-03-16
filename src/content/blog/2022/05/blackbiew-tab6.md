@@ -3,7 +3,7 @@ title: 'SIMフリーの8インチタブレット "Blackview Tab 6" を買った'
 date: 2022/05/03
 tags: [tablet, gadget]
 draft: false
-image: /images/2022/05/blackview-tab6.jpg
+image: /static/images/2022/05/blackview-tab6.jpg
 ---
 
 ## 7〜8インチのタブレットを探していた
