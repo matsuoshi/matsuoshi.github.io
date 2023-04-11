@@ -12,7 +12,7 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const { title, author, description, image, date, tags } = post.data;
+const { title, author, description, image, heroImage, date, tags } = post.data;
 
 const { Content } = await post.render();
 
@@ -41,7 +41,11 @@ const ogUrl = image ? new URL(image, Astro.url.origin).href : "";
     </ul>
 
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
-      {image && <img src={`${image}`} alt="thumbnail" class="w-full" />}
+      {
+        image && heroImage && (
+          <img src={`${image}`} alt="thumbnail" class="w-full" />
+        )
+      }
       <Content />
     </article>
   </main>
