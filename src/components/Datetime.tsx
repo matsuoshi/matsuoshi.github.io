@@ -30,7 +30,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
 
   const date = myDatetime.toLocaleDateString([], {
     year: "numeric",
-    month: "long",
+    month: "short",
     day: "numeric",
   });
 
@@ -41,10 +41,7 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
 
   return (
     <>
-      {date}
-      <span aria-hidden="true"> | </span>
-      <span className="sr-only">&nbsp;at&nbsp;</span>
-      {time}
+      {date} {time}
     </>
   );
 };
