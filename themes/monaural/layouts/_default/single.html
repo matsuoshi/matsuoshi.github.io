@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="single">
+  <article class="content">
+
+    {{ if and (.Params.thumbnail) (not .Params.no_thumbnail) }}<img src="{{ .Params.thumbnail }}" alt="" class="thumbnail">{{ end }}
+
+    {{ .Content }}
+  </article>
+
+  {{ partial "post-related.html" . }}
+</div>
+
+{{ end }}

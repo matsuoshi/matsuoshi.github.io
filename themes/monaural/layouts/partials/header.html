@@ -1,0 +1,32 @@
+{{ if not .IsHome }}
+<nav class="gNav">
+  <div class="logo">
+    <a href="{{ .Site.BaseURL }}">
+      {{ with .Site.Params.logo }}<img src="{{ . }}" alt="logo">{{ end }}
+      {{ .Site.Title }}
+    </a>
+  </div>
+</nav>
+{{ end }}
+
+<header class="header">
+  <div class="hero">
+    {{ if .IsHome }}
+      <h1 class="title title-home">
+        <a href="{{ .Site.BaseURL }}">
+          {{ with .Site.Params.logo }}<img src="{{ . }}" alt="logo" class="homeLogo">{{ end }}
+          {{ .Site.Title }}
+        </a>
+      </h1>
+    {{ else if .IsPage }}
+      <h1 class="title">{{ .Title }}</h1>
+      <div class="meta">
+        {{ partial "postmeta/pubtime.html" . }}
+        {{ partial "postmeta/tags.html" . }}
+      </div>
+    {{ else }}
+      <h1 class="title">{{ .Title }}</h1>
+      <div class="meta">archives</div>
+    {{ end }}
+  </div>
+</header>

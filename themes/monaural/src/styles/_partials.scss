@@ -1,0 +1,80 @@
+.tags {
+  margin: 1rem 0;
+  .tag {
+    display: inline-block;
+    &:not(:last-child) {
+      &:after {
+        content: ',';
+      }
+      margin-right: .2rem;
+    }
+  }
+}
+
+
+a:hover .postThumbnail {
+  animation: postThumbnailHover .3s;
+}
+
+@keyframes postThumbnailHover {
+  20% {filter: blur(2px) brightness(120%); }
+}
+
+
+.paginator {
+  display: flex;
+
+  a {
+    display: block;
+    flex-grow: 1;
+  }
+  .paginator_prev {
+    text-align: left;
+    &:before {
+      content: '< ';
+    }
+  }
+  .paginator_next {
+    text-align: right;
+    &:after {
+      content: ' >';
+    }
+  }
+}
+
+.relatedPosts {
+  margin-top: 8em;
+
+  .relatedPosts_posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .relatedPosts_post {
+    width: 48%;
+    @include mq('m') {
+      width: 31%;
+    }
+    margin-bottom: 2rem;
+
+    a {
+      @extend %a-defaultColor;
+    }
+
+    .postThumbnail {
+      width: 100%;
+      height: 0;
+      padding-top: $thumbnail-size;
+      background-size: cover;
+      background-position: center;
+    }
+    .title {
+      margin: .8rem 0 .4rem;
+    }
+    .post_meta {
+      font-size: $fz-small;
+    }
+  }
+}

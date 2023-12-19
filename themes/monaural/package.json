@@ -1,0 +1,20 @@
+{
+  "name": "monaural",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=develop webpack --config=node_modules/laravel-mix/setup/webpack.config.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "laravel-mix": "^2.1.14",
+    "modularized-normalize-scss": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync-webpack-plugin": "^2.0.1"
+  }
+}

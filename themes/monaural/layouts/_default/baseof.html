@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+{{ template "_internal/google_analytics_async.html" . }}
+
+<div class="container">
+  {{ partial "header.html" . }}
+
+  <main class="main">
+    {{ partial "additional/main-before.html" . }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "additional/main-after.html" . }}
+  </main>
+
+  {{ partial "aside.html" . }}
+
+  {{ partial "footer.html" . }}
+</div>
+<script src="/js/app.js"></script>
+</body>
+</html>

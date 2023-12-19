@@ -1,0 +1,52 @@
+$fz-base: 16px;
+$fz-small: 14px;
+$fz-large: 22px;
+
+$color: #333;
+$color-light: #888;
+$color-link: #26d;
+$color-link-hover: #6af;
+$color-border: #ddd;
+
+$lh-title: 1.4;
+$lh-paragraph: 1.8;
+
+$thumbnail-size: percentage(1 / 2.35);
+
+
+body {
+  font-size: $fz-base;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: $color;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+}
+
+a {
+  text-decoration: none;
+  color: $color-link;
+  transition: color .15s;
+  word-break: break-all;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+%a-defaultColor {
+  color: $color;
+  &:hover {
+    color: $color-link;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  line-height: $lh-title;
+}

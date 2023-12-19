@@ -1,0 +1,93 @@
+$font-logo: Helvetica Neue, Helvetica, Arial, appleLogo, sans-serif;
+$font-logo-weight: 200;
+
+// header
+.gNav {
+  .logo {
+    font-family: $font-logo;
+    font-weight: $font-logo-weight;
+  }
+}
+.header {
+  .hero {
+    .title-home {
+      font-family: $font-logo;
+      font-weight: $font-logo-weight;
+      margin: 2em 0;
+    }
+  }
+}
+
+
+// aside
+.aside {
+  .about {
+    line-height: 1.6;
+
+    .title {
+      margin-top: 0;
+    }
+
+    .avatar {
+      width: 64px;
+      float: left;
+      margin: 0 1rem 0 0;
+      border-radius: 50%;
+    }
+
+    h4 {
+      margin: 0 0 .4rem;
+    }
+  }
+}
+
+
+// footer
+.footer {
+  .footer_about {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .footer_about .avatar {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+    margin-right: .5rem;
+  }
+  .footer_about .title {
+    margin: 0;
+    display: inline;
+  }
+
+  .footer_sns {
+    margin: 1rem auto 3rem;
+  }
+  .footer_sns li {
+    display: inline-block;
+    padding: 0 .4rem;
+  }
+  .footer_sns li img {
+    width: 20px;
+  }
+
+  .avatar {
+    width: 32px;
+    border-radius: 50%;
+  }
+}
+
+
+// instagram
+.instagram-media {
+  margin: 4rem auto !important;
+}
+
+
+// ad
+.ad_aside {
+  margin-bottom: 6rem;
+}
+.ad_footer {
+  margin: 4rem auto 0;
+  max-width: 820px;
+}

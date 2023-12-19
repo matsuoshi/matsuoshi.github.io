@@ -1,0 +1,10 @@
+name = "monaural"
+license = "MIT"
+description = "plain blog theme"
+homepage = "https://monaural.github.io/hugo-monaural"
+tags = ["blog", "minimaml", "responsive", "simple", "clean", "white"]
+features = ["blog", "themes"]
+
+[author]
+name = "matsuo@monaural"
+homepage = "https://monaural.net/"

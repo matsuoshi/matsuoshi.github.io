@@ -1,0 +1,13 @@
+<footer class="footer">
+  {{ partial "additional/footer-before.html" . }}
+
+  <small>
+    {{ with .Site.Copyright }}
+      {{ . | safeHTML }}
+    {{ else }}
+      <a href="https://github.com/monaural/hugo-monaural">hugo monaural theme</a> by <a href="https://monaural.net/">monaural.net</a>
+    {{ end }}
+  </small>
+
+  {{ partial "additional/footer-after.html" . }}
+</footer>

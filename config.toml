@@ -1,0 +1,17 @@
+baseURL = "https://matsuoshi.github.io/"
+LanguageCode = "ja"
+title = "onmute"
+theme = "monaural"
+#googleAnalytics = "UA-451999-18"
+
+summaryLength = 50
+hasCJKLanguage = true
+paginate = 10
+
+[params]
+logo = "/images/logo.png"
+description = "matsuoshi's blog"
+twitter = '@matsuoshi'
+
+[blackfriday]
+smartypants = false

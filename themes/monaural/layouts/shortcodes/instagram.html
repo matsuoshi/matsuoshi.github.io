@@ -1,0 +1,20 @@
+{{ if .IsNamedParams }}
+
+<figure class="embed{{ with .Get "class" }} {{.}}{{ end }}">
+  <a href="https://www.instagram.com/p/{{ .Get "src" }}">
+    <img src="https://www.instagram.com/p/{{ .Get "src" }}/media/?size=l" alt="instagram photos">
+  </a>
+  {{ with .Get "title" }}
+  <figcaption><h4>{{ . }}</h4></figcaption>
+  {{ end }}
+</figure>
+
+{{ else }}
+
+<figure class="embed">
+  <a href="https://www.instagram.com/p/{{ .Get 0 }}">
+    <img src="https://www.instagram.com/p/{{ .Get 0 }}/media/?size=l" alt="instagram photos">
+  </a>
+</figure>
+
+{{ end }}

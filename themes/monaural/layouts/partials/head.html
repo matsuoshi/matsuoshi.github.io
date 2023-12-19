@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $pageTitle := partial "postmeta/title.html" . | replaceRE "\n" "" }}
+  {{ $description := partial "postmeta/description.html" . | replaceRE "\n" "" }}
+  {{ $ogimage := partial "postmeta/get-thumbnail.html" . | replaceRE "\n" "" | absURL }}
+  <title>{{ $pageTitle | safeHTML }}</title>
+  <meta name="description" content="{{ $description }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ $pageTitle | safeHTML }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with $ogimage }}
+  <meta property="og:image" content="{{ $ogimage }}">
+  <meta name="twitter:image" content="{{ $ogimage }}" />
+  {{ end }}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ $pageTitle | safeHTML }}" />
+  <meta name="twitter:description" content="{{ $description }}" />
+  {{ with .Site.Params.twitter }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="alternate" href="{{ .Site.RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ partial "additional/head-after.html" . }}
+</head>

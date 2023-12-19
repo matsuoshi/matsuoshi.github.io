@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+  <div class="list">
+
+    <ul class="posts">
+      {{ $paginator := .Paginate (where .Pages "Section" "posts") }}
+      {{ range $paginator.Pages }}
+        <li class="posts_post">
+          <a href="{{ .Permalink }}">
+            {{ partial "postmeta/thumbnail.html" . }}
+
+            <h2 class="post_title title">{{ .Title }}</h2>
+
+            {{ partial "postmeta/pubtime.html" . }}
+
+            <div class="post_summary">
+              {{ partial "postmeta/description.html" . }}
+            </div>
+
+            {{ partial "postmeta/tags.html" . }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+    {{ partial "pagination.html" . }}
+
+  </div>
+
+{{ end }}

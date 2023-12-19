@@ -1,0 +1,51 @@
+.aside {
+  font-size: $fz-small;
+
+  section:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
+  p {
+    line-height: $lh-paragraph;
+  }
+
+  .recentPosts {
+    line-height: $lh-title;
+    a {
+      @extend %a-defaultColor;
+    }
+    .post_title {
+      font-weight: bold;
+    }
+  }
+  .recentPosts_item {
+    margin-bottom: 1.5rem;
+    time {
+      display: block;
+      margin-top: .5rem;
+    }
+  }
+
+  .popularTags {
+    .tags {
+      line-height: $lh-paragraph;
+      a {
+        @extend %a-defaultColor;
+      }
+    }
+
+    .tag {
+      font-weight: bold;
+      font-size: 120%;
+    }
+    .tag:nth-child(5) ~ .tag {
+      font-size: 100%;
+    }
+    .tag:nth-child(10) ~ .tag {
+      font-weight: normal;
+    }
+    .tag:nth-child(20) ~ .tag {
+      font-size: 90%;
+    }
+  }
+}

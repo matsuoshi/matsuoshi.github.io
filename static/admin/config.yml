@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: monaural/blog
+  branch: master
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+- name: "post"
+  label: "Post"
+  folder: "content/post"
+  create: true
+  slug: "{{slug}}"
+  fields:
+  - {label: "Title", name: "title", widget: "string"}
+  - {label: "Descreption", name: "description", widget: "text", required: false}
+  - {label: "Publish Date", name: "date", widget: "datetime"}
+  - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+  - {label: "no_thumbnail", name: "no_thumbnail", widget: "boolean", required: false}
+  - {label: "Tags", name: "tags", widget: "list", required: false}
+  - {label: "Body", name: "body", widget: "markdown"}

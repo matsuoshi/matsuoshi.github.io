@@ -1,0 +1,8 @@
+<section class="popularTags">
+  <h3 class="title">Tags</h3>
+  <ul class="tags">
+    {{ range first 30 .Site.Taxonomies.tags.ByCount }}
+      <li class="tag"><a href="{{ $.Site.BaseURL }}tags/{{ .Name | urlize }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</section>

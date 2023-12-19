@@ -1,0 +1,58 @@
+$breakpoints: (
+  's': 400px,
+  'm': 768px,
+  'l': 960px,
+  'xl': 1200px,
+) !default;
+
+@mixin mq($breakpoint: l) {
+  @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+@include mq() {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    grid-column-gap: 5rem;
+    grid-template-areas:
+      "gNav gNav"
+      "header header"
+      "main   aside"
+      "footer footer";
+
+    .gNav {
+      grid-area: gNav;
+    }
+    .header {
+      grid-area: header;
+    }
+    .main {
+      grid-area: main;
+    }
+    .aside {
+      grid-area: aside;
+    }
+    .footer {
+      grid-area: footer;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1200px;
+
+  @include mq() {
+    padding: 2em 4em;
+  }
+}
+
+.main {
+  margin-bottom: 6rem;
+  @include mq() {
+    margin-bottom: 0;
+  }
+}

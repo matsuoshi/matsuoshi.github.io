@@ -1,0 +1,19 @@
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
+  <section class="relatedPosts">
+    <h3>Related Posts</h3>
+    <ul class="relatedPosts_posts">
+      {{ range . }}
+      <li class="relatedPosts_post">
+        <a href="{{ .RelPermalink }}">
+          {{ partial "postmeta/thumbnail.html" . }}
+          <h4 class="title">{{ .Title }}</h4>
+          <div class="post_meta">
+            {{ partial "postmeta/pubtime.html" . }}
+          </div>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
