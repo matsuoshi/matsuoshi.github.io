@@ -1,8 +1,14 @@
 $font-logo: Helvetica Neue, Helvetica, Arial, appleLogo, sans-serif;
 $font-logo-weight: 200;
 
+body {
+  background-color: #f8f8f8;
+}
+
 // header
 .gNav {
+  background-color: rgba(248, 248, 248, 0.95);
+
   .logo {
     font-family: $font-logo;
     font-weight: $font-logo-weight;
