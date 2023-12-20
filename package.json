@@ -2,22 +2,18 @@
   "name": "matsuoshi-github-io",
   "version": "1.0.0",
   "keywords": [],
-  "author": "",
+  "author": "matsuoshi",
   "license": "MIT",
   "scripts": {
     "start": "(sleep 2 && open http://localhost:1313) & npm run watch",
-    "build": "rm -rf public && npm run build:mix && npm run build:hugo",
-    "build:mix": "NODE_ENV=production webpack --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "rm -rf public && npm run build:css && npm run build:hugo",
+    "build:css": "sass src/styles/additional.scss:static/css/additional.css --style compressed",
     "build:hugo": "hugo",
-    "watch": "npm run watch:mix & npm run watch:hugo",
-    "watch:mix": "NODE_ENV=develop webpack --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
+    "watch": "npm run watch:css & npm run watch:hugo",
+    "watch:css": "sass src/styles/additional.scss:static/css/additional.css --style compressed --watch",
     "watch:hugo": "hugo server -wDF"
   },
-  "dependencies": {
-    "laravel-mix": "^2.1.14",
-    "modularized-normalize-scss": "^4.0.0"
-  },
   "devDependencies": {
-    "browser-sync-webpack-plugin": "^2.0.1"
+    "sass": "^1.69.5"
   }
 }
