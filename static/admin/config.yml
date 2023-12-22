@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: monaural/blog
-  branch: master
+  repo: matsuoshi/matsuoshi.github.io
+  branch: main
 
 publish_mode: editorial_workflow
 
@@ -11,14 +11,16 @@ public_folder: "/images/uploads"
 collections:
 - name: "post"
   label: "Post"
-  folder: "content/post"
+  folder: "content/posts/{{year}}/{{month}}"
   create: true
-  slug: "{{slug}}"
+  slug: "{{year}}/{{month}}/{{slug}}"
+  editor:
+    preview: false
   fields:
   - {label: "Title", name: "title", widget: "string"}
-  - {label: "Descreption", name: "description", widget: "text", required: false}
+  - {label: "Description", name: "description", widget: "text", required: false}
   - {label: "Publish Date", name: "date", widget: "datetime"}
   - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
-  - {label: "no_thumbnail", name: "no_thumbnail", widget: "boolean", required: false}
+  - {label: "noHeroImage", name: "noHeroImage", widget: "boolean", required: false}
   - {label: "Tags", name: "tags", widget: "list", required: false}
   - {label: "Body", name: "body", widget: "markdown"}
