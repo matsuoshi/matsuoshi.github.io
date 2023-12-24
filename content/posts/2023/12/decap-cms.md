@@ -1,5 +1,5 @@
 ---
-title: Decap CMS (旧 Netlify CMS) をブログに導入した
+title: Decap CMS (旧 Netlify CMS) を GitHub Pages に導入した
 slug: decap-cms
 date: 2023-12-24T04:31:00.858Z
 thumbnail: /images/uploads/decap-cms.jpg
@@ -27,6 +27,6 @@ GitHub Pages + Hugo での細かい設定方法はここが参考になりまし
 
 - Hugo に Decap CMS の管理画面ページとして 2つのファイルを設置する (/static/admin 配下の index.html と config.yml) 
 - GitHub で新規に [OAuth App](https://github.com/settings/developers) を作成する
-- Netlify で空のサイトを作り、GitHub の OAuth を設定する (Client ID と secrets を設定)
+- 認証用に Netlify で空のサイトを作り、GitHub の OAuth 情報 (Client ID, secrets) とサイトのドメイン名を設定する
 
 以上でOKでした。
