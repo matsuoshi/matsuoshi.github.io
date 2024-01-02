@@ -7,6 +7,7 @@ noHeroImage: true
 tags:
   - agile
   - fearless change
+  - book
 ---
 書籍 Fearless Change を久々にさらっと読み返している
 
