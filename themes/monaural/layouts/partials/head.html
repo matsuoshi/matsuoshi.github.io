@@ -19,7 +19,9 @@
   <meta name="twitter:description" content="{{ $description }}" />
   {{ with .Site.Params.twitter }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="alternate" href="{{ .Site.RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}">
+  {{ with .OutputFormats.Get "rss" -}}
+  <link rel="alternate" href="{{ .Permalink }}" type="application/rss+xml" title="{{ site.Title }}">
+  {{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
   {{ partial "additional/head-after.html" . }}
 </head>
