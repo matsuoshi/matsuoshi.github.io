@@ -5,6 +5,7 @@ date: 2024-01-04T13:08:33+09:00
 tags:
   - agile
   - scrum
+thumbnail: /images/uploads/scrum-checklist.jpg
 ---
 アジャイルやスクラム関連のチェックリストを調べていたので、3つほど並べます
 
