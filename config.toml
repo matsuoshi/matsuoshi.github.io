@@ -1,6 +1,6 @@
 baseURL = "https://matsuoshi.github.io/"
 LanguageCode = "ja"
-title = "onmute"
+title = "monaural"
 theme = "monaural"
 #googleAnalytics = "UA-451999-18"
 
