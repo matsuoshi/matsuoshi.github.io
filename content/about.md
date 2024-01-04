@@ -4,13 +4,13 @@ title: "About"
 date: 2020-04-01
 ---
 
-Astro + GitHub Pages で作ってみたブログです
+Hugo + GitHub Pages で作ってみたブログです
 
 ## Author
 
 ### matsuo (@matsuoshi)
 
-![icon](/images/icon.jpg)
+![icon](/images/avatar.jpg)
 
 ### SNS, others
 
