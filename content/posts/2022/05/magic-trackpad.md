@@ -12,9 +12,7 @@ Apple の Magic Trackpad, いわゆる外付けのタッチパッドで、ノー
 
 しらんかったー
 
-[![](https://images-fe.ssl-images-amazon.com/images/P/B09BTT6FJ9.09.LZZZZZZZ)](https://www.amazon.co.jp/dp/B09BTT6FJ9)
-
-https://www.amazon.co.jp/dp/B09BTT6FJ9
+{{<amazon asin="B09BTT6FJ9" title="Apple Magic Trackpad" >}}
 
 ## デバイスは有線派
 

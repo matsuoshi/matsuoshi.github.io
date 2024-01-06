@@ -24,4 +24,4 @@ noHeroImage: true
 
 特に「メトリクス否定派」の 4 つは全然あるあるな話で、この 4 つにちゃんと答えられない、説得できないのであれば難しくなるだろうなあと。
 
-[![](https://m.media-amazon.com/images/I/51OHAoJQjzL._SX394_BO1,204,203,200_.jpg)](https://www.amazon.co.jp/dp/4798169412)
+{{<amazon asin="4798169412" title="アジャイルメトリクス" >}}

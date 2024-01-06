@@ -14,9 +14,7 @@ noHeroImage: true
 
 おおきな違いはボールのサイズですね。乗り換え前後でボールの直径が 40mm → 55mm になりました。
 
-[![](https://images-fe.ssl-images-amazon.com/images/P/B09CDCSC4T.09.LZZZZZZZ)](https://www.amazon.co.jp/dp/B09CDCSC4T)
-
-https://www.amazon.co.jp/dp/B09CDCSC4T
+{{<amazon asin="B09CDCSC4T" title="Kensington USB エキスパートマウス" >}}
 
 ## いいところ
 
@@ -49,11 +47,9 @@ https://www.amazon.co.jp/dp/B09CDCSC4T
 
 ## Link
 ### OrbitTrackball with Scroll Ring
-[![](https://images-fe.ssl-images-amazon.com/images/P/B004QE4JXA.09.LZZZZZZZ)](https://www.amazon.co.jp/dp/B004QE4JXA)
 
-https://www.amazon.co.jp/dp/B004QE4JXA
+{{<amazon asin="B004QE4JXA" title="Kensington OrbitTrackball with Scroll Ring" >}}
 
 ### Slimblade
-[![](https://images-fe.ssl-images-amazon.com/images/P/B09CD41MSG.09.LZZZZZZZ)](https://www.amazon.co.jp/dp/B09CD41MSG)
 
-https://www.amazon.co.jp/dp/B09CD41MSG
+{{<amazon asin="B09CD41MSG" title="Kensington USB スリムブレードトラックボール" >}}

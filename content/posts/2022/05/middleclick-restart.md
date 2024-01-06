@@ -1,7 +1,7 @@
 ---
 title: トラックパッドでの Middleclick と、任意のアプリを再起動するシェルスクリプト
 date: 2022-05-28
-tags: [english, application]
+tags: [application]
 thumbnail: https://raw.githubusercontent.com/artginzburg/MiddleClick-BigSur/main/demo.png
 ---
 

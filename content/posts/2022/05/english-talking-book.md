@@ -14,9 +14,7 @@ noHeroImage: true
 
 そういうタイトルの本。
 
-[![](https://images-fe.ssl-images-amazon.com/images/P/B074754B87.09.LZZZZZZZ)](https://www.amazon.co.jp/dp/B074754B87)
-
-https://www.amazon.co.jp/dp/B074754B87
+{{<amazon asin="B074754B87" title="難しいことはわかりませんが、英語が話せる方法を教えてください！" >}}
 
 そこには、「実際に話さないと話せるようにはならない」と書かれてあった。
 

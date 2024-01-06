@@ -29,4 +29,4 @@ tags:
 
 続きも読み返そう
 
-[![](https://m.media-amazon.com/images/I/51qBqrsnM6L.jpg)](https://amazon.jp/dp/462108786X)
+{{<amazon asin="462108786X" title="Fearless Change" >}}
