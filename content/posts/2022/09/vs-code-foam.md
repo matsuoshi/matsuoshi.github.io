@@ -1,7 +1,7 @@
 ---
 title: VSCode の Foam 拡張機能が、Obsidian の代替としてめっちゃ良さげ
 date: 2022-09-12
-tags: [blog, tools, foam]
+tags: [blog, application, foam, obsidian, vscode, memo]
 ---
 
 Obsidian とか、Roam Research 的なツールは数あれど、自分的にはなんか定着しなくて、使いこなせてないだけ説が強いのですが。単に扱うツールの数が増えることが問題なのか。どうなのか。

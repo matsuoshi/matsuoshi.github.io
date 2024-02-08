@@ -15,14 +15,15 @@ Hugo + GitHub Pages で作ってみたブログです
 ### SNS, others
 
 - [Instagram](https://instagram.com/matsuoshi)
-- [X / Twitter](https://twitter.com/matsuoshi)
 - [Facebook](https://www.facebook.com/matsuoshi)
+- [X / Twitter](https://twitter.com/matsuoshi)
 
 ### tech outputs
 
 - [GitHub](https://github.com/matsuoshi)
 - [Qiita](https://qiita.com/matsuoshi)
 - [Speaker Deck](https://speakerdeck.com/matsuoshi)
+- [日本の祝日 API (Holidays JP API)](https://holidays-jp.github.io/)
 
 ### communities
 
@@ -32,5 +33,7 @@ Hugo + GitHub Pages で作ってみたブログです
 
 ### others
 
+- [spotify](https://open.spotify.com/user/matsuoshi)
+- [last.fm](https://www.last.fm/user/matsuoshi)
 - [mixcloud](https://www.mixcloud.com/matsuoshi/)
 - [pause // music blog](https://pause.monaural.net)
