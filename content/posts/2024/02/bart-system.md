@@ -6,7 +6,7 @@ noHeroImage: true
 tags: [agile, scrum, framework, coaching]
 ---
 
-書籍「コーチングアジャイルチームス」に出てきた、BART分析についてのメモ
+書籍「コーチングアジャイルチームス」の第8章に出てきた、BART分析についてのメモ
 
 BART は Boundary, Authority, Role, Task の頭文字
 
