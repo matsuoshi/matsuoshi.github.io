@@ -1,0 +1,4 @@
+baseURL = 'https://matsuoshi.github.io/'
+languageCode = 'ja_jp'
+title = 'monaural'
+theme = "PaperMod"
