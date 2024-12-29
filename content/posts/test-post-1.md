@@ -6,6 +6,8 @@ tags: ["first", second]
 
 hello
 
+[[hugo-with-wikilinks]]
+
 [[test-post-2]]
 
 ok?

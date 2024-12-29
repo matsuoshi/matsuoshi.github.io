@@ -3,7 +3,7 @@ title: "About"
 date: 2024-12-28T11:30:03+09:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["first"]
+tags: [about]
 # author: "Me"
 # author: ["Me", "You"] # multiple authors
 showToc: true
