@@ -38,4 +38,4 @@ cover:
 
 hello
 
-<iframe src="https://hatenablog-parts.com/embed?url=https://linktr.ee/matsuoshi" style="border: 0; width: 100%; height: 150px;" allowtransparency="true" scrolling="no"></iframe>
+{{<link "https://linktr.ee/matsuoshi">}}

@@ -47,12 +47,14 @@ draft: false
 コードブロック
 
 ```
-<?php
-function foo(bar) {
-    /* comment */
-    $biz = 'example';
-    echo $biz, PHP_EOL;
+function sumNumbers() {
+  let sum = 0;
+  for (let i = 1; i <= 5; i++) {
+    sum += i;
+  }
+  return sum;
 }
+console.log(sumNumbers()); // 15
 ```
 
 テーブル
@@ -110,17 +112,17 @@ figure (タイトル, リンクあり)
 
 YouTube 埋め込み
 
-{{</* youtube src="N9XKLqGqwLA" title="Grimes - Reality" */>}}
+{{<youtube src="N9XKLqGqwLA" title="Grimes - Reality">}}
 {{<youtube gg_OThhfXh0>}}
 
 Amazon ジャケット画像埋め込み
 
-{{</* amazon asin="B072841PRP" title="James Blake - James Blake" */>}}
-{{</* amazon B01MXERTDF */>}}
+{{<amazon asin="B072841PRP" title="James Blake - James Blake">}}
+{{<amazon B01MXERTDF>}}
 
 Spotify プレイリスト
 
-{{</* spotify "user/matsuoshi/playlist/2X8Od330iUxnxfwRgcqhMG" */>}}
+{{<spotify "user/matsuoshi/playlist/2X8Od330iUxnxfwRgcqhMG">}}
 
 テキストテキスト。
 
