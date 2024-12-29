@@ -5,3 +5,7 @@ tags: ["first", second]
 ---
 
 hello
+
+[[test-post-2]]
+
+ok?

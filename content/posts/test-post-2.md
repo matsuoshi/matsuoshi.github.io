@@ -5,3 +5,9 @@ tags: ["first", second]
 ---
 
 hello
+
+[[about]]
+
+[[search]]
+
+[[test-post-1]]
