@@ -17,13 +17,29 @@ menu:
       name: about
       url: /about/
       weight: 30
-    # - identifier: example
-    #   name: example.org
-    #   url: https://example.org
-    #   weight: 30
 
 params:
   env: production
+  homeInfoParams:
+    Title: monaural
+    Content: モノラル
+
+  socialIcons: # optional
+    - name: "instagram"
+      url: "https://instagram.com/matsuoshi"
+    - name: "x"
+      url: "https://x.com/matsuoshi"
+    - name: "facebook"
+      url: "https://facebook.com/matsuoshi"
+    - name: "spotify"
+      url: "https://open.spotify.com/user/matsuoshi"
+    - name: "lastfm"
+      url: "http://www.last.fm/user/matsuoshi"
+    - name: "mixcloud"
+      url: "https://www.mixcloud.com/matsuoshi/"
+    - name: "github"
+      url: "https://github.com/matsuoshi"
+
 
 disableKinds:
   - section
