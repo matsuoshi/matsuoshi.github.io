@@ -23,6 +23,12 @@ params:
   homeInfoParams:
     Title: monaural
     Content: モノラル
+  assets:
+    favicon: "/images/logo.png"
+    favicon16x16: "/images/logo.png"
+    favicon32x32: "/images/logo.png"
+    apple_touch_icon: "/images/logo.png"
+    safari_pinned_tab: "/images/logo.png"
 
   socialIcons: # optional
     - name: "instagram"
@@ -39,7 +45,6 @@ params:
       url: "https://www.mixcloud.com/matsuoshi/"
     - name: "github"
       url: "https://github.com/matsuoshi"
-
 
 disableKinds:
   - section
