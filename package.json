@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run serve",
-    "serve": "hugo serve"
+    "serve": "hugo serve",
+    "new": "mkdir -p \"content/posts/`date '+%Y/%m'`\"; mkdir -p \"static/images/`date '+%Y/%m'`\"; echo \"---\ntitle: \ndate: `date -Iseconds`\ntags: []\n---\n\" >  \"content/posts/`date '+%Y/%m'`/new.md\""
   },
   "keywords": [],
   "author": "",
