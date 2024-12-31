@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "about matsuoshi.github.io site"
+description: "about this site"
 # canonicalURL: "https://canonical.url/to/page"
 # disableHLJS: true # to disable highlightjs
 # disableShare: false
@@ -36,6 +36,6 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-hello
+Author: matsuoshi / Hiroshi Matsuo
 
 {{<link "https://linktr.ee/matsuoshi">}}
