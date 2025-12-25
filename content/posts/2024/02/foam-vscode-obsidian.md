@@ -2,6 +2,8 @@
 title: Obsidian みたいなことを VSCode 上で実現する拡張機能 "Foam"
 date: 2024-02-07T09:00:00+09:00
 tags: [tool, application, foam]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/02/07/000000
 ---
 
 markdownメモアプリの話。
