@@ -2,6 +2,8 @@
 title: スクラム関連のチェックリスト いろいろ
 date: 2024-01-04T09:00:00+09:00
 tags: [agile, scrum]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/01/04/000000
 ---
 
 アジャイルやスクラム関連のチェックリストを調べていたので、いくつか並べます

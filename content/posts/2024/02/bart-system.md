@@ -2,6 +2,8 @@
 title: 書籍コーチングアジャイルチームスと「ネイティブワイヤリング」「BART分析」
 date: 2024-02-09T09:00:00+09:00
 tags: [agile, book]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/02/07/164259
 ---
 
 書籍「コーチングアジャイルチームス」を買って読んでいます、いろいろとためになることばっかりだ

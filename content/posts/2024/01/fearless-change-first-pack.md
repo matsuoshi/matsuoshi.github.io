@@ -2,6 +2,8 @@
 title: Fearless Change パターンの最小基本パック
 date: 2024-01-02T09:00:00+09:00
 tags: [agile, scrum, book]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/01/02/000000
 ---
 
 書籍 Fearless Change を久々にさらっと読み返している

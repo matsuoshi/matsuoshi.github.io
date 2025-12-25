@@ -2,6 +2,8 @@
 title: 書籍「コーチングアジャイルチームス」と、「ネイティブワイヤリング」
 date: 2024-01-31T09:00:00+09:00
 tags: [agile, book]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/01/31/000000
 ---
 
 ## 書籍「コーチングアジャイルチームス」

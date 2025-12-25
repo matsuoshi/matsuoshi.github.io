@@ -2,6 +2,8 @@
 title: CSSでコードゴルフをする CSS Battle
 date: 2024-02-08T09:00:00+09:00
 tags: [css, web]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/02/12/000000
 ---
 
 ## CSS Battle とは
