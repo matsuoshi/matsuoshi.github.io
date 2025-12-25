@@ -2,6 +2,8 @@
 title: "RDM : Macのディスプレイ解像度を上げるツール"
 date: 2020-11-01T09:00:00+09:00
 tags: [mac, tool, application]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2020/11/01/000000
 ---
 
 探してたツールが見つかったので、自分メモ
