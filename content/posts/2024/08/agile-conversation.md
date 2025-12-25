@@ -2,6 +2,8 @@
 title: 他者理解は好奇心 （書籍「組織を変える5つの対話」を読んだメモ）
 date: 2024-08-25T09:00:00+09:00
 tags: [agile, book]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/08/25/094923
 ---
 
 オライリーの「組織を変える5つの対話」を読んだメモ

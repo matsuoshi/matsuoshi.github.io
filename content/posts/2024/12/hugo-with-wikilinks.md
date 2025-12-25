@@ -2,6 +2,8 @@
 title: Hugo で Wikilinks を有効にする
 date: 2024-12-29T17:00:03+09:00
 tags: [hugo, blog]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/12/29/000000
 ---
 
 Hugo で Wikilinks 記法(`[[]]` こんな感じで brackets で囲むリンク) を有効にする

@@ -2,6 +2,8 @@
 title: The Core Protocols V3.01 日本語版
 date: 2025-01-17T13:42:42+09:00
 tags: [teamwork]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2025/01/17/134200
 ---
 
 The Core Protocols の日本語版PDFダウンロードリンクを探していたのでメモ

@@ -4,6 +4,8 @@ date: 2024-08-18T09:00:00+09:00
 tags: [phone, iphone, mobile]
 cover:
   image: /images/2024/08/iphone12mini.png
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/08/18/000000
 ---
 
 コンパクトサイズのスマホが好きなので、普段は Android ユーザーなんだけど iPhone 12 mini を試してみた  

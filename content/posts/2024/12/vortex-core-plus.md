@@ -4,6 +4,8 @@ date: 2024-12-27T09:00:00+09:00
 tags: [keyboard]
 cover:
   image: /images/2024/12/vortex-core-plus.png
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2024/12/27/090000
 ---
 
 気になってた 40％ キーボード Vortex Core Plus のプレオーダーが始まってた
