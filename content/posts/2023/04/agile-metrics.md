@@ -2,6 +2,8 @@
 title: 書籍「アジャイルメトリクス」メモ
 date: 2023-04-11T09:00:00+09:00
 tags: [agile, book]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2023/04/11/000000
 ---
 
 書籍「アジャイルメトリクス - アジャイルチームのパフォーマンスを向上する定量化とデータ収集法」を読み始めた

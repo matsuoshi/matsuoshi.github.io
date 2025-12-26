@@ -3,6 +3,8 @@ title: Decap CMS (旧 Netlify CMS) を GitHub Pages に導入した
 slug: decap-cms
 date: 2023-12-24T04:31:00.858Z
 thumbnail: /images/uploads/decap-cms.jpg
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2023/12/24/000000
 tags:
   - blog
   - cms

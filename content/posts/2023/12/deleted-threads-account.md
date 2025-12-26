@@ -2,6 +2,8 @@
 title: threads のアカウントを消して作り直した
 date: 2023-12-31T09:00:00+09:00
 tags: [sns]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2023/12/31/000000
 ---
 
 meta社がやってる SNS の threads, アカウントは Instagram と必ず紐づく仕様になっているようで
