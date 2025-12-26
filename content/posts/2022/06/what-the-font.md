@@ -2,6 +2,8 @@
 title: 文字を撮影してフォント名を調べられるアプリ "WhatTheFont"
 date: 2022-06-05
 tags: [font, application]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/06/05/000000
 ---
 
 タイトルそのまんまなんですけど、

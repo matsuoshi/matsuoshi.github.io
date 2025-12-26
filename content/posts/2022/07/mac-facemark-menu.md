@@ -2,6 +2,8 @@
 title: "Mac で顔文字入力のウィンドウを出さないようにする"
 date: 2022-07-20
 tags: [mac]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/07/20/000000
 ---
 
 Mac で文字入れてて、たまに入力ミスとかで、画面にこんなウィンドウが出ることないですか

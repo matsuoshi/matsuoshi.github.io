@@ -2,6 +2,8 @@
 title: Mac のスクリーンショットの保存が遅いときの対処
 date: 2022-06-27
 tags: [mac, application]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/06/27/000000
 ---
 
 Mac のスクリーンショットを `cmd + shift + 3` とか `cmd + shift + 4` とかで撮るんですが、なんか保存が遅いですよね

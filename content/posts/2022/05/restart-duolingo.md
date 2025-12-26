@@ -4,6 +4,8 @@ date: 2022-05-09
 tags: [english, application]
 cover:
     image: /images/2022/05/duolingo1.jpg
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/05/09/000000
 ---
 
 ## 英語をアプリで勉強するぞ

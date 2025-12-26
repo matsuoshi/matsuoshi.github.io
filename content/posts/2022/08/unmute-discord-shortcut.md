@@ -2,6 +2,8 @@
 title: ホットキー1つで、音楽再生を止めてDiscordのミュートを解除するAppleScript
 date: 2022-08-10
 tags: [script]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/08/10/000000
 ---
 
 という Zenn を書きましたよと

@@ -2,6 +2,8 @@
 title: ONKYO のスマートスピーカー VC-GX30 を試している
 date: 2022-07-10
 tags: [music, speaker, audio, gadget]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/07/10/000000
 ---
 
 ## オンキヨーのスマートスピーカー VC-GX30

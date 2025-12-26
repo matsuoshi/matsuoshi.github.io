@@ -2,6 +2,8 @@
 title: M1 Mac でキーリピートがうまく効かないとき
 date: 2022-06-10
 tags: [mac, keyboard]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/06/10/000000
 ---
 
 なんか、M1 Mac でキーを押しっぱなしにしても、連続入力してくれない、ことがある。ありません？

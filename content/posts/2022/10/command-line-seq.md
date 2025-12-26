@@ -2,6 +2,8 @@
 title: シェルのワンライナーで 0 つきの連番を作ってゴニョゴニョする
 date: 2022-10-16
 tags: [shell]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/10/16/000000
 ---
 
 # 連番を作って作業する必要があった

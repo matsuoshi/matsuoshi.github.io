@@ -3,6 +3,8 @@ title: 'マウスホバーで英単語の日本語訳がわかる Chrome拡張 "
 date: 2022-10-24
 tags: [tools, chrome, english]
 thumbnail: /images/2022/10/mousedic.png
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/10/24/150612
 ---
 
 数年前からある Chrome 拡張ですが、今さらインストールした。便利。

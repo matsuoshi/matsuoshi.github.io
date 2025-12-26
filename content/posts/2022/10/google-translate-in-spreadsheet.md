@@ -4,6 +4,8 @@ date: 2022-10-07
 tags: [tools, english]
 thumbnail: /images/2022/10/202210071157.png
 noHeroImage: true
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/10/07/000000
 ---
 
 # Google スプレッドシート内で、テキストを 日本語 ←→ 英語などに翻訳したい

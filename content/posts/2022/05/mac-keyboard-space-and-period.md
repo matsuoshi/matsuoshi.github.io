@@ -2,6 +2,8 @@
 title: Mac でスペースを連続入力するときに、ピリオドが入ってしまう設定を外した
 date: 2022-05-05
 tags: [mac, keyboard]
+layout: redirect
+redirectTo: https://matsuoshi.hatenablog.com/entry/2022/05/05/000000
 ---
 
 なんか知らんのですが、Mac でスペースバーを連打したときに、勝手にピリオドが入力されてしまうことがあった。
