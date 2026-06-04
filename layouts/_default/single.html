@@ -29,28 +29,30 @@
   {{ end }}
 
   <div class="flex flex-col flex-1">
-    <div class="pt-20 px-8 pb-20">
-      <h1 class="text-[22px] font-normal leading-[1.28] mb-3 tracking-[-.01em] text-fg">
-        {{ .Title }}
-      </h1>
-      <div class="flex flex-wrap gap-1.5">
-        {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}" class="inline-block text-[10px] font-light px-[7px] py-0.5 rounded-full cursor-pointer transition-colors duration-150 bg-tagbg text-fg3 hover:text-fg2 no-underline">{{ . }}</a>
-        {{ end }}
+    <div class="pt-20 px-8 pb-20 {{ if .Params.thumbnail }}grid grid-cols-1 md:grid-cols-2 gap-8 items-center{{ end }}">
+      <div>
+        <h1 class="text-[22px] font-normal leading-[1.28] mb-3 tracking-[-.01em] text-fg">
+          {{ .Title }}
+        </h1>
+        <div class="flex flex-wrap gap-1.5">
+          {{ range .Params.tags }}
+          <a href="/tags/{{ . | urlize }}" class="inline-block text-[10px] font-light px-[7px] py-0.5 rounded-full cursor-pointer transition-colors duration-150 bg-tagbg text-fg3 hover:text-fg2 no-underline">{{ . }}</a>
+          {{ end }}
+        </div>
+        <p class="text-xs font-light text-fg3 pt-2">
+          {{ .Date.Format "2006-01-02" }} · {{ $minutes }} min read
+        </p>
       </div>
-      <p class="text-xs font-light text-fg3 pt-2">
-        {{ .Date.Format "2006-01-02" }} · {{ $minutes }} min read
-      </p>
-    </div>
 
-    <div class="px-8">
       {{ if .Params.thumbnail }}
-        <div class="w-full aspect-[16/6] rounded-lg overflow-hidden mt-7 mb-8">
+        <div class="w-full aspect-video rounded-lg overflow-hidden bg-bg3">
           <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailAlt | default "" }}"
             class="w-full h-full object-cover" />
         </div>
       {{ end }}
+    </div>
 
+    <div class="px-8">
       <div class="prose-article mt-8 mb-12">
         {{ .Content }}
       </div>
