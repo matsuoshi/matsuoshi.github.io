@@ -7,14 +7,14 @@
       {{ end }}
     </div>
     <div class="px-0.5">
-      <div class="flex flex-wrap gap-[5px] mb-1.5">
+      <h2 class="text-[13px] font-normal leading-[1.45] mb-[5px] text-fg">
+        {{ $post.Title }}
+      </h2>
+      <div class="flex flex-wrap gap-[5px]">
         {{ range $post.Params.tags }}
           <a href="/tags/{{ . | urlize }}" class="tag-pill" onclick="event.stopPropagation()">{{ . }}</a>
         {{ end }}
       </div>
-      <h2 class="text-[13px] font-normal leading-[1.45] mb-[5px] text-fg">
-        {{ $post.Title }}
-      </h2>
       <time class="text-[11px] font-light text-fg3">
         {{ $post.Date.Format "2006-01-02" }}
       </time>
