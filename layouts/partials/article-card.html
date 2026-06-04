@@ -1,7 +1,7 @@
 {{ $post := . }}
 <article class="group">
   <a href="{{ $post.RelPermalink }}" class="block no-underline">
-    <div class="w-full aspect-video overflow-hidden rounded-lg bg-bg3 mb-3">
+    <div class="w-full aspect-video overflow-hidden rounded-md bg-bg3 mb-3">
       {{ if $post.Params.thumbnail }}
         <img src="{{ $post.Params.thumbnail }}" alt="{{ $post.Params.thumbnailAlt | default "" }}" class="block w-full h-full object-cover transition-opacity duration-[180ms] group-hover:opacity-70" />
       {{ end }}
