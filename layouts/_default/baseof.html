@@ -17,7 +17,7 @@
 </head>
 <body>
   {{ partial "header.html" . }}
-  <main>
+  <main class="flex flex-col flex-1">
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}

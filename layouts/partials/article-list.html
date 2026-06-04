@@ -21,4 +21,8 @@
 </div>
 
 {{ partial "pagination.html" $page }}
-{{ partial "tag-list.html" (dict "tags" $allTags "activeTag" $activeTag) }}
+
+{{/* タグ一覧は本文が少ない場合まとめて画面下に寄せる */}}
+<div class="mt-auto">
+  {{ partial "tag-list.html" (dict "tags" $allTags "activeTag" $activeTag) }}
+</div>
