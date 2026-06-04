@@ -13,7 +13,7 @@
 {{ $allTags = $allTags | uniq }}
 
 <div class="px-7 pt-7">
-  <div class="article-grid">
+  <div class="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-3">
     {{ range $page.Paginator.Pages }}
       {{ partial "article-card.html" . }}
     {{ end }}
@@ -22,7 +22,6 @@
 
 {{ partial "pagination.html" $page }}
 
-{{/* タグ一覧は本文が少ない場合まとめて画面下に寄せる */}}
 <div class="mt-auto">
   {{ partial "tag-list.html" (dict "tags" $allTags "activeTag" $activeTag) }}
 </div>

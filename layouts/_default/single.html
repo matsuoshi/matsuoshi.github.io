@@ -44,7 +44,7 @@
       </h1>
       <div class="flex flex-wrap gap-1.5">
         {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}" class="tag-pill">{{ . }}</a>
+        <a href="/tags/{{ . | urlize }}" class="inline-block text-[10px] font-light px-[7px] py-0.5 rounded-full cursor-pointer transition-colors duration-150 bg-tagbg text-fg3 hover:text-fg2 no-underline">{{ . }}</a>
         {{ end }}
       </div>
       <p class="text-xs font-light text-fg3 pt-2">
@@ -69,7 +69,7 @@
       <section class="px-8 pt-20">
         <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-[18px] text-fg3">related articles
         </p>
-        <div class="article-grid">
+        <div class="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-3">
           {{ range $related }}
           {{ partial "article-card.html" . }}
           {{ end }}

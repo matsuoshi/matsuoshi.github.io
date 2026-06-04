@@ -1,11 +1,14 @@
 {{ $activeTag := .activeTag }}
 {{ $tags := .tags }}
+{{ $base := "inline-block text-xs font-light px-[13px] py-[5px] rounded-full cursor-pointer border-[0.5px] border-transparent transition-all duration-150 hover:border-line2 no-underline" }}
+{{ $active := "bg-fg text-bg" }}
+{{ $idle := "bg-tagbg text-fg2" }}
 <section class="px-8 pt-10">
   <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-3 text-fg3">browse by tag</p>
   <div class="flex flex-wrap gap-[7px]">
-    <a href="/" class="tag-filter{{ if not $activeTag }} active{{ end }}">all</a>
+    <a href="/" class="{{ $base }} {{ if not $activeTag }}{{ $active }}{{ else }}{{ $idle }}{{ end }}">all</a>
     {{ range $tags }}
-      <a href="/tags/{{ . | urlize }}" class="tag-filter{{ if eq . $activeTag }} active{{ end }}">{{ . }}</a>
+      <a href="/tags/{{ . | urlize }}" class="{{ $base }} {{ if eq . $activeTag }}{{ $active }}{{ else }}{{ $idle }}{{ end }}">{{ . }}</a>
     {{ end }}
   </div>
 </section>

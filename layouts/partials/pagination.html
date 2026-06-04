@@ -1,28 +1,32 @@
 {{ $pag := .Paginator }}
+{{ $base := "flex items-center justify-center w-8 h-8 text-xs font-light rounded-md border-[0.5px] transition-colors duration-150 no-underline" }}
+{{ $idle := "border-line2 text-fg2 hover:bg-bg2" }}
+{{ $active := "bg-fg text-bg border-fg" }}
+{{ $disabled := "border-line2 text-fg2 opacity-30 pointer-events-none" }}
 {{ if gt $pag.TotalPages 1 }}
 <nav class="flex items-center justify-center gap-1.5 px-8 pt-7" aria-label="ページネーション">
   {{ if $pag.HasPrev }}
-    <a href="{{ $pag.Prev.URL }}" class="pg-btn" aria-label="前のページ">
+    <a href="{{ $pag.Prev.URL }}" class="{{ $base }} {{ $idle }}" aria-label="前のページ">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
     </a>
   {{ else }}
-    <span class="pg-btn disabled" aria-hidden="true">
+    <span class="{{ $base }} {{ $disabled }}" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
     </span>
   {{ end }}
 
   {{ range $pag.Pagers }}
-    <a href="{{ .URL }}" class="pg-btn{{ if eq . $pag }} active{{ end }}" {{ if eq . $pag }}aria-current="page"{{ end }}>
+    <a href="{{ .URL }}" class="{{ $base }} {{ if eq . $pag }}{{ $active }}{{ else }}{{ $idle }}{{ end }}" {{ if eq . $pag }}aria-current="page"{{ end }}>
       {{ .PageNumber }}
     </a>
   {{ end }}
 
   {{ if $pag.HasNext }}
-    <a href="{{ $pag.Next.URL }}" class="pg-btn" aria-label="次のページ">
+    <a href="{{ $pag.Next.URL }}" class="{{ $base }} {{ $idle }}" aria-label="次のページ">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
     </a>
   {{ else }}
-    <span class="pg-btn disabled" aria-hidden="true">
+    <span class="{{ $base }} {{ $disabled }}" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
     </span>
   {{ end }}
