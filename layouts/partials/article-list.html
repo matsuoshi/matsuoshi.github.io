@@ -3,15 +3,6 @@
 {{ $page := .page }}
 {{ $activeTag := .activeTag }}
 
-{{/* 全ブログ記事からタグを収集 */}}
-{{ $allTags := slice }}
-{{ range (where $page.Site.RegularPages "Type" "blog") }}
-  {{ range .Params.tags }}
-    {{ $allTags = $allTags | append . }}
-  {{ end }}
-{{ end }}
-{{ $allTags = $allTags | uniq }}
-
 <div class="px-7 pt-7">
   <div class="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-10">
     {{ range $page.Paginator.Pages }}
@@ -23,5 +14,5 @@
 {{ partial "pagination.html" $page }}
 
 <div class="mt-auto">
-  {{ partial "tag-list.html" (dict "tags" $allTags "activeTag" $activeTag) }}
+  {{ partial "tag-list.html" (dict "terms" $page.Site.Taxonomies.tags.ByCount "activeTag" $activeTag "limit" 15) }}
 </div>

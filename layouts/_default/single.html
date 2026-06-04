@@ -4,15 +4,6 @@
   {{ $minutes := div $words 400 }}
   {{ if lt $minutes 1 }}{{ $minutes = 1 }}{{ end }}
 
-  {{/* All tags for tag-list partial */}}
-  {{ $allTags := slice }}
-  {{ range (where .Site.RegularPages "Type" "blog") }}
-    {{ range .Params.tags }}
-      {{ $allTags = $allTags | append . }}
-    {{ end }}
-  {{ end }}
-  {{ $allTags = $allTags | uniq }}
-
   {{/* Related posts: タグ一致を優先し、3件に満たなければ最新記事で補充 */}}
   {{ $current := . }}
   {{ $blog := where .Site.RegularPages "Type" "blog" }}
@@ -37,7 +28,7 @@
     {{ end }}
   {{ end }}
 
-  <div class="">
+  <div class="flex flex-col flex-1">
     <div class="pt-20 px-8 pb-20">
       <h1 class="text-[22px] font-normal leading-[1.28] mb-3 tracking-[-.01em] text-fg">
         {{ .Title }}
@@ -65,18 +56,20 @@
       </div>
     </div>
 
-    {{ if $related }}
-      <section class="px-8 pt-20">
-        <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-[18px] text-fg3">related articles
-        </p>
-        <div class="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-10">
-          {{ range $related }}
-          {{ partial "article-card.html" . }}
-          {{ end }}
-        </div>
-      </section>
-    {{ end }}
+    <div class="mt-auto">
+      {{ if $related }}
+        <section class="px-8 pt-20">
+          <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-[18px] text-fg3">related articles
+          </p>
+          <div class="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-10">
+            {{ range $related }}
+            {{ partial "article-card.html" . }}
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
 
-    {{ partial "tag-list.html" (dict "tags" $allTags "activeTag" "") }}
+      {{ partial "tag-list.html" (dict "terms" .Site.Taxonomies.tags.ByCount "activeTag" "" "limit" 15) }}
+    </div>
   </div>
 {{ end }}
