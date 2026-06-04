@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['DM Sans', 'system-ui', 'sans-serif'],
-        mono: ['DM Mono', 'monospace'],
+        sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'system-ui', 'sans-serif'],
+        mono: ['Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       colors: {
         // テーマ用 CSS 変数（light/dark は :root / .dark で切替）
@@ -22,6 +22,8 @@ module.exports = {
         line: 'var(--border)',
         line2: 'var(--border2)',
         tagbg: 'var(--tag-bg)',
+        accent: 'var(--accent)',
+        accenth: 'var(--accent-hover)',
       },
     },
   },
