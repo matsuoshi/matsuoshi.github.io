@@ -10,7 +10,7 @@
       <h2 class="text-[13px] font-normal leading-[1.45] mb-[5px] text-fg">
         {{ $post.Title }}
       </h2>
-      <div class="flex flex-wrap gap-[5px]">
+      <div class="flex flex-wrap gap-[5px] -ml-[7px]">
         {{ range $post.Params.tags }}
           <a href="/tags/{{ . | urlize }}" class="inline-block text-[10px] font-light px-[7px] py-0.5 rounded-full cursor-pointer transition-colors duration-150 bg-tagbg text-fg3 hover:text-fg2 no-underline" onclick="event.stopPropagation()">{{ . }}</a>
         {{ end }}
