@@ -1,0 +1,24 @@
+{{/* 記事グリッド + ページネーション + タグ一覧 の共通パーツ。
+     引数: dict "page" <ページ> "activeTag" <選択中タグ文字列(無ければ "")> */}}
+{{ $page := .page }}
+{{ $activeTag := .activeTag }}
+
+{{/* 全ブログ記事からタグを収集 */}}
+{{ $allTags := slice }}
+{{ range (where $page.Site.RegularPages "Type" "blog") }}
+  {{ range .Params.tags }}
+    {{ $allTags = $allTags | append . }}
+  {{ end }}
+{{ end }}
+{{ $allTags = $allTags | uniq }}
+
+<div style="padding:28px 28px 0;">
+  <div class="article-grid">
+    {{ range $page.Paginator.Pages }}
+      {{ partial "article-card.html" . }}
+    {{ end }}
+  </div>
+</div>
+
+{{ partial "pagination.html" $page }}
+{{ partial "tag-list.html" (dict "tags" $allTags "activeTag" $activeTag) }}
