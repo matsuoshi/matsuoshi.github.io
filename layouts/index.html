@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <section style="padding:48px 32px 36px;border-bottom:0.5px solid var(--border);">
-    <p style="font-size:11px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;color:var(--text3);">articles</p>
-    <p style="font-size:14px;font-weight:300;color:var(--text2);">{{ .Site.Params.description }}</p>
+  <section class="pt-12 px-8 pb-9 border-b-[0.5px] border-line">
+    <p class="text-[11px] font-normal tracking-[.1em] uppercase mb-2.5 text-fg3">articles</p>
+    <p class="text-sm font-light text-fg2">{{ .Site.Params.description }}</p>
   </section>
 
   {{ partial "article-list.html" (dict "page" . "activeTag" "") }}

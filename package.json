@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "concurrently \"hugo server\" \"npx tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --watch\"",
-    "build": "npm run build:css && hugo --minify",
+    "build": "npm run clean && npm run build:css && hugo --minify",
     "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --minify",
     "clean": "rm -rf public/*"
   },

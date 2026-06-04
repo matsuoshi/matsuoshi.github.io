@@ -31,35 +31,35 @@
   {{ end }}
   {{ $related = first 3 $related }}
 
-  <div style="padding:36px 32px 32px;border-bottom:0.5px solid var(--border);">
-    <p style="font-size:12px;font-weight:300;margin-bottom:10px;color:var(--text3);">
+  <div class="pt-9 px-8 pb-8 border-b-[0.5px] border-line">
+    <p class="text-xs font-light mb-2.5 text-fg3">
       {{ .Date.Format "2006-01-02" }} · {{ $minutes }} min read
     </p>
-    <h1 style="font-size:22px;font-weight:400;line-height:1.28;margin-bottom:14px;letter-spacing:-.01em;color:var(--text);">
+    <h1 class="text-[22px] font-normal leading-[1.28] mb-3.5 tracking-[-.01em] text-fg">
       {{ .Title }}
     </h1>
-    <div style="display:flex;flex-wrap:wrap;gap:6px;">
+    <div class="flex flex-wrap gap-1.5">
       {{ range .Params.tags }}
         <a href="/tags/{{ . | urlize }}" class="tag-pill">{{ . }}</a>
       {{ end }}
     </div>
   </div>
 
-  <div style="padding:0 32px;">
+  <div class="px-8">
     {{ if .Params.thumbnail }}
-      <div style="width:100%;aspect-ratio:16/6;border-radius:8px;overflow:hidden;margin:28px 0 32px;">
-        <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailAlt | default "" }}" style="width:100%;height:100%;object-fit:cover;" />
+      <div class="w-full aspect-[16/6] rounded-lg overflow-hidden mt-7 mb-8">
+        <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailAlt | default "" }}" class="w-full h-full object-cover" />
       </div>
     {{ end }}
 
-    <div class="prose-article" style="margin-top:32px;margin-bottom:48px;">
+    <div class="prose-article mt-8 mb-12">
       {{ .Content }}
     </div>
   </div>
 
   {{ if $related }}
-    <section style="padding:36px 32px 0;">
-      <p style="font-size:11px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;color:var(--text3);">related articles</p>
+    <section class="px-8 pt-9">
+      <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-[18px] text-fg3">related articles</p>
       <div class="article-grid">
         {{ range $related }}
           {{ partial "article-card.html" . }}

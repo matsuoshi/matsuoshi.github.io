@@ -12,7 +12,7 @@
 {{ end }}
 {{ $allTags = $allTags | uniq }}
 
-<div style="padding:28px 28px 0;">
+<div class="px-7 pt-7">
   <div class="article-grid">
     {{ range $page.Paginator.Pages }}
       {{ partial "article-card.html" . }}

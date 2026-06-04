@@ -1,12 +1,12 @@
-<header style="display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:0.5px solid var(--border);">
-  <a href="/" style="font-size:14px;font-weight:400;letter-spacing:.02em;color:var(--text);text-decoration:none;">
+<header class="flex items-center justify-between px-8 py-[18px] border-b-[0.5px] border-line">
+  <a href="/" class="text-sm font-normal tracking-[.02em] text-fg no-underline">
     {{ .Site.Title }}
   </a>
-  <div style="display:flex;align-items:center;gap:20px;">
-    <a href="/about" style="font-size:13px;font-weight:300;color:var(--text2);text-decoration:none;">about</a>
-    <button id="theme-toggle" style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:300;padding:4px 12px;border-radius:9999px;border:0.5px solid var(--border2);background:none;color:var(--text2);cursor:pointer;font-family:inherit;" aria-label="テーマ切り替え">
+  <div class="flex items-center gap-5">
+    <a href="/about" class="text-[13px] font-light text-fg2 no-underline">about</a>
+    <button id="theme-toggle" class="flex items-center gap-1.5 text-xs font-light px-3 py-1 rounded-full border-[0.5px] border-line2 bg-transparent text-fg2 cursor-pointer font-[inherit]" aria-label="テーマ切り替え">
       <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
-      <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg id="icon-sun" class="hidden" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
       <span id="theme-label">dark</span>
     </button>
   </div>
@@ -22,8 +22,8 @@
 
     function update() {
       var dark = html.classList.contains('dark');
-      moon.style.display = dark ? 'none' : '';
-      sun.style.display = dark ? '' : 'none';
+      moon.classList.toggle('hidden', dark);
+      sun.classList.toggle('hidden', !dark);
       label.textContent = dark ? 'light' : 'dark';
     }
 
