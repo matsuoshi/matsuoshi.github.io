@@ -1,14 +1,14 @@
-baseURL = "https://example.com"
+baseURL = "https://matsuoshi.github.io"
 locale = "ja"
-title = "my.blog"
+title = "monaurallog"
 enableRobotsTXT = true
 
 [pagination]
   pagerSize = 12
 
 [params]
-  description = "tech notes, ideas, and occasional rants about the web."
-  author = "my.blog"
+  description = "モノラルログ: ざっくりしたブログです"
+  author = "matsuoshi"
 
 [taxonomies]
   tag = "tags"

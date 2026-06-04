@@ -2,8 +2,6 @@
 title: xremap を使って、Ubuntu 上で Mac っぽい controlキーの挙動を設定した
 date: 2024-09-28T09:00:00+09:00
 tags: [ubuntu, keyboard]
-layout: redirect
-redirectTo: http://matsuoshi.hatenablog.com/entry/2024/09/28/101508
 
 ---
 

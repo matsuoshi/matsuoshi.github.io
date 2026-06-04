@@ -2,10 +2,8 @@
 title: Duolingo で英語の勉強を再開した
 date: 2022-05-09
 tags: [english, application]
-cover:
-    image: /images/2022/05/duolingo1.jpg
-layout: redirect
-redirectTo: https://matsuoshi.hatenablog.com/entry/2022/05/09/000000
+thumbnail: /images/2022/05/duolingo1.jpg
+
 ---
 
 ## 英語をアプリで勉強するぞ

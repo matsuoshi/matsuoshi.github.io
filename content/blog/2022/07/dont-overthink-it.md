@@ -2,8 +2,7 @@
 title: React のドキュメントに「考えすぎない」って書いてある
 date: 2022-07-04
 tags: [programming]
-layout: redirect
-redirectTo: https://matsuoshi.hatenablog.com/entry/2022/07/04/000000
+
 ---
 
 ## 考えすぎない
