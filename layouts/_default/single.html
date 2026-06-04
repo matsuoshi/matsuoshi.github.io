@@ -31,14 +31,14 @@
   {{ end }}
   {{ $related = first 3 $related }}
 
-  <div class="pt-9 px-8 pb-8 border-b-[0.5px] border-line">
+  <div class="pt-9 px-8 pb-8 border-b-[0.5px] border-line text-center">
     <p class="text-xs font-light mb-2.5 text-fg3">
       {{ .Date.Format "2006-01-02" }} · {{ $minutes }} min read
     </p>
     <h1 class="text-[22px] font-normal leading-[1.28] mb-3.5 tracking-[-.01em] text-fg">
       {{ .Title }}
     </h1>
-    <div class="flex flex-wrap gap-1.5">
+    <div class="flex flex-wrap justify-center gap-1.5">
       {{ range .Params.tags }}
         <a href="/tags/{{ . | urlize }}" class="tag-pill">{{ . }}</a>
       {{ end }}

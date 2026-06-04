@@ -136,7 +136,8 @@
     line-height: 1.9;
     color: var(--text);
     font-weight: 300;
-    max-width: 640px;
+    max-width: 800px;
+    margin: 0 auto;
   }
   .prose-article p { margin-bottom: 1.4em; }
   .prose-article h1 {
