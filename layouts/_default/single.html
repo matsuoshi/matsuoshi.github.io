@@ -37,43 +37,42 @@
     {{ end }}
   {{ end }}
 
-  <div class="pt-20 px-8 pb-20 text-center">
-    <p class="text-xs font-light mb-2.5 text-fg3">
-      {{ .Date.Format "2006-01-02" }} · {{ $minutes }} min read
-    </p>
-    <h1 class="text-[22px] font-normal leading-[1.28] mb-3.5 tracking-[-.01em] text-fg">
-      {{ .Title }}
-    </h1>
-    <div class="flex flex-wrap justify-center gap-1.5">
-      {{ range .Params.tags }}
+  <div class="">
+    <div class="pt-20 px-8 pb-20">
+      <h1 class="text-[22px] font-normal leading-[1.28] mb-3 tracking-[-.01em] text-fg">
+        {{ .Title }}
+      </h1>
+      <div class="flex flex-wrap gap-1.5">
+        {{ range .Params.tags }}
         <a href="/tags/{{ . | urlize }}" class="tag-pill">{{ . }}</a>
-      {{ end }}
-    </div>
-  </div>
-
-  <div class="px-8">
-    {{ if .Params.thumbnail }}
-      <div class="w-full aspect-[16/6] rounded-lg overflow-hidden mt-7 mb-8">
-        <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailAlt | default "" }}" class="w-full h-full object-cover" />
+        {{ end }}
       </div>
-    {{ end }}
-
-    <div class="prose-article mt-8 mb-12">
-      {{ .Content }}
+      <p class="text-xs font-light text-fg3 pt-2">
+        {{ .Date.Format "2006-01-02" }} · {{ $minutes }} min read
+      </p>
     </div>
-  </div>
 
-  {{/* 関連記事・タグ一覧は本文が短い場合まとめて画面下に寄せる */}}
-  <div class="mt-auto">
+    <div class="px-8">
+      {{ if .Params.thumbnail }}
+        <div class="w-full aspect-[16/6] rounded-lg overflow-hidden mt-7 mb-8">
+          <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailAlt | default "" }}"
+            class="w-full h-full object-cover" />
+        </div>
+      {{ end }}
+
+      <div class="prose-article mt-8 mb-12">
+        {{ .Content }}
+      </div>
+    </div>
+
     {{ if $related }}
       <section class="px-8 pt-20">
-        <div class="max-w-[800px] mx-auto">
-          <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-[18px] text-fg3 text-center">related articles</p>
-          <div class="article-grid">
-            {{ range $related }}
-              {{ partial "article-card.html" . }}
-            {{ end }}
-          </div>
+        <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-[18px] text-fg3">related articles
+        </p>
+        <div class="article-grid">
+          {{ range $related }}
+          {{ partial "article-card.html" . }}
+          {{ end }}
         </div>
       </section>
     {{ end }}

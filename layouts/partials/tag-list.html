@@ -1,8 +1,8 @@
 {{ $activeTag := .activeTag }}
 {{ $tags := .tags }}
-<section class="px-8 pt-10 text-center">
+<section class="px-8 pt-10">
   <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-3 text-fg3">browse by tag</p>
-  <div class="flex flex-wrap justify-center gap-[7px]">
+  <div class="flex flex-wrap gap-[7px]">
     <a href="/" class="tag-filter{{ if not $activeTag }} active{{ end }}">all</a>
     {{ range $tags }}
       <a href="/tags/{{ . | urlize }}" class="tag-filter{{ if eq . $activeTag }} active{{ end }}">{{ . }}</a>

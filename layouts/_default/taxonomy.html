@@ -2,7 +2,7 @@
   {{ $tag := .Title }}
   {{ $count := len .Pages }}
 
-  <section class="pt-20 px-8 pb-20 text-center">
+  <section class="pt-20 px-8 pb-20">
     <h1 class="text-[22px] font-normal tracking-[-.01em] mb-1.5 text-fg">#{{ $tag }}</h1>
     <p class="text-[13px] font-light text-fg2">{{ $count }} article{{ if ne $count 1 }}s{{ end }}</p>
   </section>
