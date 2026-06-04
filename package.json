@@ -1,0 +1,13 @@
+{
+  "name": "hugo-blog",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently \"hugo server\" \"npx tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --watch\"",
+    "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --minify",
+    "build": "npm run build:css && hugo --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "concurrently": "^8.0.0"
+  }
+}

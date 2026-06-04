@@ -1,0 +1,29 @@
+{{ define "main" }}
+  {{ $tag := .Title }}
+  {{ $count := len .Pages }}
+
+  {{ $allTags := slice }}
+  {{ range (where .Site.RegularPages "Type" "blog") }}
+    {{ range .Params.tags }}
+      {{ $allTags = $allTags | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $allTags = $allTags | uniq }}
+
+  <section style="padding:36px 32px 28px;border-bottom:0.5px solid var(--border);">
+    <p style="font-size:11px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;color:var(--text3);">tag</p>
+    <h1 style="font-size:22px;font-weight:400;letter-spacing:-.01em;margin-bottom:6px;color:var(--text);">#{{ $tag }}</h1>
+    <p style="font-size:13px;font-weight:300;color:var(--text2);">{{ $count }} article{{ if ne $count 1 }}s{{ end }}</p>
+  </section>
+
+  <div style="padding:28px 28px 0;">
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;" class="article-grid">
+      {{ range .Paginator.Pages }}
+        {{ partial "article-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+
+  {{ partial "pagination.html" . }}
+  {{ partial "tag-list.html" (dict "tags" $allTags "activeTag" $tag) }}
+{{ end }}

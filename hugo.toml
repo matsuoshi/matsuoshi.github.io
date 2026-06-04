@@ -1,0 +1,18 @@
+baseURL = "https://example.com"
+languageCode = "ja"
+title = "my.blog"
+paginate = 6
+enableRobotsTXT = true
+
+[params]
+  description = "tech notes, ideas, and occasional rants about the web."
+  author = "my.blog"
+
+[taxonomies]
+  tag = "tags"
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark.renderer]
+  unsafe = true

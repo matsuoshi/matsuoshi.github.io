@@ -1,0 +1,23 @@
+{{ $post := . }}
+<article class="card">
+  <a href="{{ $post.RelPermalink }}" style="display:block;text-decoration:none;">
+    <div class="card-thumb" style="margin-bottom:12px;">
+      {{ if $post.Params.thumbnail }}
+        <img src="{{ $post.Params.thumbnail }}" alt="{{ $post.Params.thumbnailAlt | default "" }}" />
+      {{ end }}
+    </div>
+    <div style="padding:0 2px;">
+      <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px;">
+        {{ range $post.Params.tags }}
+          <a href="/tags/{{ . | urlize }}" class="tag-pill" onclick="event.stopPropagation()">{{ . }}</a>
+        {{ end }}
+      </div>
+      <h2 style="font-size:13px;font-weight:400;line-height:1.45;margin-bottom:5px;color:var(--text);">
+        {{ $post.Title }}
+      </h2>
+      <time style="font-size:11px;font-weight:300;color:var(--text3);">
+        {{ $post.Date.Format "2006-01-02" }}
+      </time>
+    </div>
+  </a>
+</article>

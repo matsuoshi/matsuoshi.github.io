@@ -1,0 +1,72 @@
+{{ define "main" }}
+  {{/* Reading time estimate */}}
+  {{ $words := .WordCount }}
+  {{ $minutes := div $words 400 }}
+  {{ if lt $minutes 1 }}{{ $minutes = 1 }}{{ end }}
+
+  {{/* All tags for tag-list partial */}}
+  {{ $allTags := slice }}
+  {{ range (where .Site.RegularPages "Type" "blog") }}
+    {{ range .Params.tags }}
+      {{ $allTags = $allTags | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $allTags = $allTags | uniq }}
+
+  {{/* Related posts: share at least one tag, exclude self */}}
+  {{ $related := slice }}
+  {{ $current := . }}
+  {{ range (where .Site.RegularPages "Type" "blog") }}
+    {{ if ne .RelPermalink $current.RelPermalink }}
+      {{ $sharedTag := false }}
+      {{ range .Params.tags }}
+        {{ if in $current.Params.tags . }}
+          {{ $sharedTag = true }}
+        {{ end }}
+      {{ end }}
+      {{ if $sharedTag }}
+        {{ $related = $related | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $related = first 3 $related }}
+
+  <div style="padding:36px 32px 32px;border-bottom:0.5px solid var(--border);">
+    <p style="font-size:12px;font-weight:300;margin-bottom:10px;color:var(--text3);">
+      {{ .Date.Format "2006-01-02" }} · {{ $minutes }} min read
+    </p>
+    <h1 style="font-size:22px;font-weight:400;line-height:1.28;margin-bottom:14px;letter-spacing:-.01em;color:var(--text);">
+      {{ .Title }}
+    </h1>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;">
+      {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}" class="tag-pill">{{ . }}</a>
+      {{ end }}
+    </div>
+  </div>
+
+  <div style="padding:0 32px;">
+    {{ if .Params.thumbnail }}
+      <div style="width:100%;aspect-ratio:16/6;border-radius:8px;overflow:hidden;margin:28px 0 32px;">
+        <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailAlt | default "" }}" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+    {{ end }}
+
+    <div class="prose-article" style="margin-top:32px;margin-bottom:48px;">
+      {{ .Content }}
+    </div>
+  </div>
+
+  {{ if $related }}
+    <section style="padding:36px 32px 0;">
+      <p style="font-size:11px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;color:var(--text3);">related articles</p>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;" class="article-grid">
+        {{ range $related }}
+          {{ partial "article-card.html" . }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ partial "tag-list.html" (dict "tags" $allTags "activeTag" "") }}
+{{ end }}
