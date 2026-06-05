@@ -7,7 +7,7 @@ enableRobotsTXT = true
   pagerSize = 12
 
 [params]
-  description = "モノラルログ: ざっくりしたブログです"
+  description = "モノラルログ: matsuo のざっくりしたブログです"
   author = "matsuoshi"
 
 [taxonomies]
