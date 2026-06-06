@@ -1,7 +1,7 @@
 ---
 title: "Markdown スタイル確認用サンプル記事"
 date: "2026-06-04"
-tags: ["Markdown", "サンプル"]
+tags: ["Markdown", "sample"]
 description: "見出し・リスト・テーブル・コードブロックなど、Markdown の各要素がどう表示されるかを確認するためのサンプルページです。"
 thumbnail: https://placehold.co/600x400
 ---

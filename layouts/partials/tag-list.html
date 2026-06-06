@@ -1,25 +1,12 @@
 {{ $activeTag := .activeTag }}
-{{ $tags := .tags }}
 {{ $terms := .terms }}
-{{ $limit := .limit | default 15 }}
-{{ $base := "inline-block text-xs font-light px-[13px] py-[5px] rounded-full cursor-pointer border-[0.5px] border-transparent transition-all duration-150 hover:border-line2 no-underline" }}
-{{ $active := "bg-fg text-bg" }}
-{{ $idle := "bg-tagbg text-fg2" }}
+{{ $limit := .limit | default 20 }}
 <section class="px-8 pt-10">
   <p class="text-[11px] font-normal tracking-[.08em] mb-3 text-fg3">tags</p>
-  <div class="flex flex-wrap gap-[7px]">
-    <a href="/" class="{{ $base }} {{ if not $activeTag }}{{ $active }}{{ else }}{{ $idle }}{{ end }}">all</a>
-    {{ with $terms }}
-      {{ range first $limit . }}
-        {{ $name := .Page.Title | default .Name }}
-        <a href="{{ .Page.RelPermalink }}" class="{{ $base }} {{ if eq $name $activeTag }}{{ $active }}{{ else }}{{ $idle }}{{ end }}">{{ $name }}</a>
-      {{ end }}
-    {{ else }}
-      {{ with $tags }}
-        {{ range first $limit . }}
-          <a href="/tags/{{ . | urlize }}" class="{{ $base }} {{ if eq . $activeTag }}{{ $active }}{{ else }}{{ $idle }}{{ end }}">{{ . }}</a>
-        {{ end }}
-      {{ end }}
+  <div class="flex flex-wrap gap-[5px] -ml-[7px]">
+    {{ range first $limit $terms }}
+      {{ $name := .Page.Title | default .Name }}
+      {{ partial "tag-pill.html" (dict "name" $name "href" .Page.RelPermalink) }}
     {{ end }}
   </div>
 </section>

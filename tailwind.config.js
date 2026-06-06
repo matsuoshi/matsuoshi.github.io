@@ -12,10 +12,8 @@ module.exports = {
         mono: ['Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       colors: {
-        // テーマ用 CSS 変数（light/dark は :root / .dark で切替）
         bg: 'var(--bg)',
         bg2: 'var(--bg2)',
-        bg3: 'var(--bg3)',
         fg: 'var(--text)',
         fg2: 'var(--text2)',
         fg3: 'var(--text3)',

@@ -34,9 +34,9 @@
         <h1 class="text-[22px] font-bold leading-[1.28] mb-3 tracking-[-.01em] text-fg">
           {{ .Title }}
         </h1>
-        <div class="flex flex-wrap gap-1.5">
+        <div class="flex flex-wrap gap-[5px] -ml-[2px]">
           {{ range .Params.tags }}
-          <a href="/tags/{{ . | urlize }}" class="inline-block text-[10px] font-light px-[7px] py-0.5 rounded-full cursor-pointer transition-colors duration-150 bg-tagbg text-fg3 hover:text-fg2 no-underline">{{ . }}</a>
+          {{ partial "tag-pill.html" (dict "name" . "href" (printf "/tags/%s" (. | urlize))) }}
           {{ end }}
         </div>
         <p class="text-xs font-light text-fg3 pt-2">
@@ -45,7 +45,7 @@
       </div>
 
       {{ if .Params.thumbnail }}
-        <div class="w-full aspect-video rounded-lg overflow-hidden bg-bg3">
+        <div class="w-full aspect-video rounded-lg overflow-hidden bg-bg2">
           <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailAlt | default "" }}"
             class="w-full h-full object-cover" />
         </div>
