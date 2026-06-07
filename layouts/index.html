@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section class="pt-20 px-8 pb-20">
     <h1 class="text-[22px] font-normal tracking-[-.01em] mb-2.5 text-fg">{{ .Site.Title }}</h1>
-    <p class="text-sm font-light text-fg2">{{ .Site.Params.description }}</p>
+    <p class="text-sm text-fg2">{{ .Site.Params.description }}</p>
   </section>
 
   {{ partial "article-list.html" (dict "page" . "activeTag" "") }}

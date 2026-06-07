@@ -15,7 +15,7 @@
           {{ partial "tag-pill.html" (dict "name" . "href" (printf "/tags/%s" (. | urlize)) "stopPropagation" true) }}
         {{ end }}
       </div>
-      <time class="text-sm font-light text-fg2">
+      <time class="text-sm text-fg2">
         {{ $post.Date.Format "2006-01-02" }}
       </time>
     </div>

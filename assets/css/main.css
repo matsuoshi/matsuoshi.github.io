@@ -62,19 +62,19 @@
   }
 
   .site-header, .site-footer-effect {
-    animation: misty-backdrop 12s ease-in-out infinite;
+    animation: misty-backdrop 16s ease-in-out infinite;
     will-change: backdrop-filter;
   }
 
   @keyframes misty-backdrop {
     0%, 100% {
-      backdrop-filter: blur(12px) contrast(200%) saturate(120%) saturate(1);
+      backdrop-filter: blur(12px) contrast(200%) saturate(1);
     }
     50% {
-      backdrop-filter: blur(12px) contrast(2000%) saturate(250%) saturate(5);
+      backdrop-filter: blur(12px) contrast(150%) saturate(3);
     }
     75% {
-      backdrop-filter: blur(12px) contrast(100%) saturate(500%) saturate(3);
+      backdrop-filter: blur(12px) contrast(400%) saturate(2);
     }
   }
 
@@ -89,7 +89,6 @@
     font-size: 15px;
     line-height: 1.9;
     color: var(--text);
-    font-weight: 400;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -198,7 +197,6 @@
     text-align: left;
   }
   .prose-article th {
-    font-weight: 400;
     color: var(--text);
     background-color: var(--bg2);
   }
