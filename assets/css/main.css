@@ -82,9 +82,8 @@
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(90deg, transparent, color-mix(in srgb, var(--bg) 16%, transparent), transparent),
-      repeating-linear-gradient(135deg, color-mix(in srgb, var(--bg) 10%, transparent) 0 1px, transparent 1px 11px);
-    opacity: 0.36;
+      linear-gradient(90deg, transparent, color-mix(in srgb, var(--bg) 14%, transparent), transparent);
+    opacity: 0.28;
   }
 
   .group:hover .article-card-placeholder {
@@ -94,6 +93,10 @@
 
   .dark .article-card-placeholder {
     filter: saturate(0.74) brightness(0.78);
+  }
+
+  .dark .article-card-placeholder::after {
+    opacity: 0.16;
   }
 
   @keyframes misty-backdrop {

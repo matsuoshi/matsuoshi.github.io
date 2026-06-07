@@ -1,6 +1,8 @@
 {{ $post := . }}
 {{ $hasThumbnail := $post.Params.thumbnail }}
-{{ $placeholderSeed := add (mul (len $post.RelPermalink) 37) (mul (len $post.Title) 53) }}
+{{ $placeholderSource := $post.Date.Format "20060102" }}
+{{ $placeholderHash := md5 $placeholderSource }}
+{{ $placeholderSeed := add (add (mul (index $placeholderHash 0) 4096) (mul (index $placeholderHash 1) 256)) (index $placeholderHash 2) }}
 {{ $placeholderHue := mod $placeholderSeed 360 }}
 {{ $placeholderSaturation := add 28 (mod (mul $placeholderSeed 7) 18) }}
 {{ $placeholderLightness := add 78 (mod (mul $placeholderSeed 11) 8) }}
