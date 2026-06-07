@@ -16,7 +16,6 @@ module.exports = {
         bg2: 'var(--bg2)',
         fg: 'var(--text)',
         fg2: 'var(--text2)',
-        fg3: 'var(--text3)',
         line: 'var(--border)',
         line2: 'var(--border2)',
         tagbg: 'var(--tag-bg)',

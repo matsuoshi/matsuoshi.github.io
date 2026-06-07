@@ -10,8 +10,8 @@ Jim McCarthy と Michelle McCarthy による、優秀な結果を残している
 
 V.3.03 の各種翻訳版ダウンロードページはこちら。
 
-https://mccarthyshow.com/the-core-pdf-version/
-https://mccarthyshow.com/protocols/the-core-protocols-japanese-v3.03.pdf
+- https://mccarthyshow.com/the-core-pdf-version/
+- https://mccarthyshow.com/protocols/the-core-protocols-japanese-v3.03.pdf
 
 (V.3.1 <https://thecoreprotocols.org/> の翻訳はいまのところ見つけられず)
 

@@ -2,7 +2,7 @@
 {{ $terms := .terms }}
 {{ $limit := .limit | default 20 }}
 <section class="px-8 pt-10">
-  <p class="text-[11px] font-normal tracking-[.08em] mb-3 text-fg3">tags</p>
+  <p class="text-[11px] font-normal tracking-[.08em] mb-3 text-fg2">tags</p>
   <div class="flex flex-wrap gap-[5px] -ml-[7px]">
     {{ range first $limit $terms }}
       {{ $name := .Page.Title | default .Name }}
