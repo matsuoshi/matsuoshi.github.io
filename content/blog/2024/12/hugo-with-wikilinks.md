@@ -2,7 +2,7 @@
 title: Hugo で Wikilinks を有効にする
 date: 2024-12-29T17:00:03+09:00
 tags: [hugo, blog]
-
+thumbnail: /images/hugo.jpg
 ---
 
 Hugo で Wikilinks 記法(`[[]]` こんな感じで brackets で囲むリンク) を有効にする
@@ -13,15 +13,21 @@ Hugo で Wikilinks 記法(`[[]]` こんな感じで brackets で囲むリンク)
 
 {{<link "https://quinncasey.com/hugo-wikilink-support/">}}
 
-1. `/layouts/partials/content-wikilinks.html` を作成し、先述のサイトのコードを配置
+1. `/layouts/partials/content-with-wikilinks.html` を作成し、先述のサイトのコードを配置
 2. hugo で使用しているテーマの `single.html` をオーバーライド (`/layouts/_default/single.html` にコピー)
 3. `single.html` 内で `{{ .Content }}` としてブログ本文を出力している箇所を、`{{- partial "content-with-wikilinks" . -}}` に置き換え
 
 これで動きました
 
-試しに Wikilinks記法で [[About]] や [[Search]] に飛んでみるテスト
+Obsidian とか Foam とかで書いた markdown を元に、Hugo で静的ページ生成する場合に便利
+
+試しに Wikilinks記法で [[About]] や [[index]] に飛んでみるテスト
 
 ---
+
+### 【追記】
+
+先述のサイトが見られなくなっていたので、コードをここにコピペ
 
 ```
 {{ $wikiregexWithText := "\\[\\[([^\\]\\|\\r\\n]+?)\\|([^\\]\\|\\r\\n]+?)\\]\\]" }}
