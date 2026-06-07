@@ -2,4 +2,4 @@
 {{- $href := .href }}
 {{- $isActive := .isActive | default false }}
 {{- $stopPropagation := .stopPropagation | default false }}
-<a href="{{ $href }}" class="inline-block text-[12px] px-[7px] py-0.5 rounded-full cursor-pointer transition-colors duration-150 border text-fg2 bg-bg hover:bg-bg2 no-underline"{{ if $stopPropagation }} onclick="event.stopPropagation()"{{ end }}>{{ $name }}</a>
+<a href="{{ $href }}" class="inline-block text-[12px] px-[7px] py-0.5 rounded-full cursor-pointer transition-colors duration-150 border border-line2 text-fg2 bg-bg hover:bg-bg2 no-underline"{{ if $stopPropagation }} onclick="event.stopPropagation()"{{ end }}>{{ $name }}</a>

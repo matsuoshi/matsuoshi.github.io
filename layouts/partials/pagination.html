@@ -2,7 +2,7 @@
 {{ $base := "flex items-center justify-center w-8 h-8 text-xs rounded-md border-[0.5px] transition-colors duration-150 no-underline" }}
 {{ $idle := "border-line2 text-fg2 hover:bg-bg2" }}
 {{ $active := "bg-fg text-bg border-fg" }}
-{{ $disabled := "border-line2 text-fg2 opacity-30 pointer-events-none" }}
+{{ $disabled := "border-line2 text-fg2 opacity-50 pointer-events-none" }}
 {{ if gt $pag.TotalPages 1 }}
 <nav class="flex items-center justify-center gap-1.5 px-8 pt-7" aria-label="ページネーション">
   {{ if $pag.HasPrev }}

@@ -14,14 +14,14 @@
     --accent-hover: #40c060;
   }
   .dark {
-    --bg: #141414;
+    --bg: #000000;
     --bg2: #262626;
     --text: #e6e6e6;
-    --text2: #9a9a9a;
-    --border: rgba(255, 255, 255, 0.08);
-    --border2: rgba(255, 255, 255, 0.14);
-    --accent: #e08a6e;
-    --accent-hover: #ed9d83;
+    --text2: #777777;
+    --border: #333;
+    --border2: #555;
+    --accent: #409060;
+    --accent-hover: #40c060;
   }
   html {
     background-color: var(--bg);
