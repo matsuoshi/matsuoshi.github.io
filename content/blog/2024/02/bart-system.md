@@ -2,7 +2,7 @@
 title: 書籍コーチングアジャイルチームスと「ネイティブワイヤリング」「BART分析」
 date: 2024-02-09T09:00:00+09:00
 tags: [agile, book]
-
+thumbnail: https://images-fe.ssl-images-amazon.com/images/P/4621308688.09.LZZZZZZZ
 ---
 
 書籍「コーチングアジャイルチームス」を買って読んでいます、いろいろとためになることばっかりだ

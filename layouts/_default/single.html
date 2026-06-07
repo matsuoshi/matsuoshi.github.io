@@ -61,7 +61,7 @@
     <div class="mt-auto">
       {{ if $related }}
         <section class="px-8 pt-20">
-          <p class="text-[11px] font-normal tracking-[.08em] uppercase mb-[18px] text-fg2">related articles
+          <p class="tracking-[.08em] mb-[18px] text-fg2">Related articles
           </p>
           <div class="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-10">
             {{ range $related }}
@@ -71,7 +71,7 @@
         </section>
       {{ end }}
 
-      {{ partial "tag-list.html" (dict "terms" .Site.Taxonomies.tags.ByCount "activeTag" "" "limit" 15) }}
+      {{ partial "tag-list.html" (dict "terms" .Site.Taxonomies.tags.ByCount "activeTag" "") }}
     </div>
   </div>
 {{ end }}

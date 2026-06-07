@@ -12,5 +12,5 @@
 {{ partial "pagination.html" $page }}
 
 <div class="mt-auto">
-  {{ partial "tag-list.html" (dict "terms" $page.Site.Taxonomies.tags.ByCount "activeTag" $activeTag "limit" 15) }}
+  {{ partial "tag-list.html" (dict "terms" $page.Site.Taxonomies.tags.ByCount "activeTag" $activeTag) }}
 </div>

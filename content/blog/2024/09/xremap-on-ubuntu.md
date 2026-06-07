@@ -2,7 +2,7 @@
 title: xremap を使って、Ubuntu 上で Mac っぽい controlキーの挙動を設定した
 date: 2024-09-28T09:00:00+09:00
 tags: [ubuntu, keyboard]
-
+thumbnail: https://opengraph.githubassets.com/c1fbb4b5c1b7d0a9a1db26ee465f5d42c0045d7aa76ea65d570a5ea01599ee87/xremap/xremap
 ---
 
 中古で ThinkPad を購入し、Ubuntu 24.04 を入れた。

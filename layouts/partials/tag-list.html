@@ -1,8 +1,10 @@
 {{ $activeTag := .activeTag }}
 {{ $terms := .terms }}
-{{ $limit := .limit | default 20 }}
-<section class="px-8 pt-10">
-  <p class="text-[11px] font-normal tracking-[.08em] mb-3 text-fg2">tags</p>
+{{ $limit := .limit | default 16 }}
+<section class="px-8 pt-10 mt-10">
+  <p class="tracking-[.08em] mb-3 text-fg2">
+    <a href="/tags/" class="hover:text-accent">Tags</a>
+  </p>
   <div class="flex flex-wrap gap-[5px] -ml-[7px]">
     {{ range first $limit $terms }}
       {{ $name := .Page.Title | default .Name }}

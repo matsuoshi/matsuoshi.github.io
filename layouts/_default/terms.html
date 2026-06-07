@@ -2,16 +2,16 @@
   {{ $terms := .Data.Terms.ByCount }}
 
   <section class="pt-20 px-8 pb-12">
-    <h1 class="text-[22px] font-normal tracking-[-.01em] mb-1.5 text-fg">{{ .Title | lower }}</h1>
+    <h1 class="text-[22px] font-normal tracking-[-.01em] mb-1.5 text-fg">{{ .Title }}</h1>
     <p class="text-[13px] text-fg2">{{ len $terms }} tag{{ if ne (len $terms) 1 }}s{{ end }}</p>
   </section>
 
   <section class="px-8">
     <div class="">
-      <div class="flex flex-wrap gap-[7px]">
+      <div class="flex flex-wrap gap-x-[16px] gap-y-[24px]">
       {{ range $terms }}
         {{ $name := .Page.Title | default .Name }}
-          <a href="{{ .Page.RelPermalink }}" class="inline-block text-xs px-[13px] py-[5px] rounded-full cursor-pointer border-[0.5px] border-transparent transition-all duration-150 hover:border-line2 no-underline bg-tagbg text-fg2">{{ $name }} ({{ .Count }})
+          <a href="{{ .Page.RelPermalink }}" class="inline-block text-sm px-[13px] py-[5px] rounded-full cursor-pointer border border-line1transition-all duration-150 hover:bg-bg2 no-underline bg-tagbg text-fg2">{{ $name }} : {{ .Count }}
         </a>
       {{ end }}
       </div>

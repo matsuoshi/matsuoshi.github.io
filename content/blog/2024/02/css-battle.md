@@ -2,7 +2,7 @@
 title: CSSでコードゴルフをする CSS Battle
 date: 2024-02-08T09:00:00+09:00
 tags: [css, web]
-
+thumbnail: /images/2024/02/css-battle-0.png
 ---
 
 ## CSS Battle とは

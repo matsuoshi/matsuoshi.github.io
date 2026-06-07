@@ -2,7 +2,7 @@
 title: Obsidian みたいなことを VSCode 上で実現する拡張機能 "Foam"
 date: 2024-02-07T09:00:00+09:00
 tags: [tool, application, foam]
-
+thumbnail: https://opengraph.githubassets.com/57b64362c39fc5d8e9868e1758199aa8f0d42cb1c5f44ce868815097ace9420f/foambubble/foam
 ---
 
 markdownメモアプリの話。

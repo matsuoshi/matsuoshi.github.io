@@ -2,7 +2,7 @@
 title: 他者理解は好奇心 （書籍「組織を変える5つの対話」を読んだメモ）
 date: 2024-08-25T09:00:00+09:00
 tags: [agile, book]
-
+thumbnail: /images/2024/08/agile-conversation.png
 ---
 
 オライリーの「組織を変える5つの対話」を読んだメモ
