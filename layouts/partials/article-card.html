@@ -1,8 +1,13 @@
 {{ $post := . }}
+{{ $hasThumbnail := $post.Params.thumbnail }}
+{{ $placeholderSeed := add (mul (len $post.RelPermalink) 37) (mul (len $post.Title) 53) }}
+{{ $placeholderHue := mod $placeholderSeed 360 }}
+{{ $placeholderSaturation := add 28 (mod (mul $placeholderSeed 7) 18) }}
+{{ $placeholderLightness := add 78 (mod (mul $placeholderSeed 11) 8) }}
 <article class="group">
   <a href="{{ $post.RelPermalink }}" class="block no-underline">
-    <div class="w-full aspect-video overflow-hidden rounded-md bg-bg2 mb-3">
-      {{ if $post.Params.thumbnail }}
+    <div class="w-full aspect-video overflow-hidden rounded-md mb-3 {{ if $hasThumbnail }}bg-bg2{{ else }}article-card-placeholder{{ end }}"{{ if not $hasThumbnail }} style="--thumb-hue: {{ $placeholderHue }}deg; --thumb-saturation: {{ $placeholderSaturation }}%; --thumb-lightness: {{ $placeholderLightness }}%;"{{ end }}>
+      {{ if $hasThumbnail }}
         <img src="{{ $post.Params.thumbnail }}" alt="{{ $post.Params.thumbnailAlt | default "" }}" class="block w-full h-full object-cover transition-opacity duration-[180ms] group-hover:opacity-70" />
       {{ end }}
     </div>

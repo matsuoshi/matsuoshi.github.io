@@ -64,6 +64,38 @@
     will-change: backdrop-filter;
   }
 
+  .article-card-placeholder {
+    position: relative;
+    background:
+      radial-gradient(circle at 18% 22%, hsl(calc(var(--thumb-hue) + 28deg) var(--thumb-saturation) calc(var(--thumb-lightness) + 4%) / 0.5) 0 18%, transparent 36%),
+      linear-gradient(
+        135deg,
+        hsl(var(--thumb-hue) var(--thumb-saturation) var(--thumb-lightness)),
+        hsl(calc(var(--thumb-hue) + 48deg) calc(var(--thumb-saturation) - 8%) calc(var(--thumb-lightness) + 3%)) 54%,
+        hsl(calc(var(--thumb-hue) + 96deg) calc(var(--thumb-saturation) - 4%) calc(var(--thumb-lightness) - 2%))
+      );
+    transition: filter 180ms ease, opacity 180ms ease;
+  }
+
+  .article-card-placeholder::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, transparent, color-mix(in srgb, var(--bg) 16%, transparent), transparent),
+      repeating-linear-gradient(135deg, color-mix(in srgb, var(--bg) 10%, transparent) 0 1px, transparent 1px 11px);
+    opacity: 0.36;
+  }
+
+  .group:hover .article-card-placeholder {
+    filter: saturate(1.08) brightness(0.98);
+    opacity: 0.78;
+  }
+
+  .dark .article-card-placeholder {
+    filter: saturate(0.74) brightness(0.78);
+  }
+
   @keyframes misty-backdrop {
     0%, 100% {
       backdrop-filter: blur(12px) contrast(200%) saturate(1);
@@ -230,4 +262,3 @@
   margin-bottom: 2rem;
 }
 }
-
