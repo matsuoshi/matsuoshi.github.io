@@ -7,7 +7,7 @@
     --bg: #ffffff;
     --bg2: #e8e8e8;
     --text: #333333;
-    --text2: #999999;
+    --text2: #888888;
     --border: #ededed;
     --border2: #dcdcdc;
     --accent: #409060;
@@ -17,7 +17,7 @@
     --bg: #000000;
     --bg2: #262626;
     --text: #e6e6e6;
-    --text2: #777777;
+    --text2: #888888;
     --border: #333;
     --border2: #555;
     --accent: #409060;
@@ -152,15 +152,18 @@
   }
   .prose-article h4 {
     font-size: 16px;
+    font-weight: 600;
     margin: 1.6em 0 0.5em;
   }
   .prose-article h5 { 
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
     margin: 1.6em 0 0.5em;
     color: var(--text2);
   }
   .prose-article h6 { 
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 600;
     margin: 1.6em 0 0.5em;
     color: var(--text2);
   }
@@ -221,7 +224,7 @@
     width: 100%;
     border-collapse: collapse;
     margin: 1.4em 0;
-    font-size: 13px;
+    font-size: 14px;
   }
   .prose-article th,
   .prose-article td {
@@ -233,19 +236,19 @@
     color: var(--text);
     background-color: var(--bg2);
   }
-  .prose-article td { color: var(--text2); }
+  .prose-article td { color: var(--text); }
   .prose-article code {
     background-color: var(--bg2);
-    padding: 2px 6px;
+    padding: 3px 6px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 14px;
     font-family: Menlo, Monaco, Consolas, monospace;
   }
   .prose-article pre {
     background-color: var(--bg2) !important;
     border-radius: 8px;
     padding: 18px;
-    font-size: 12px;
+    font-size: 14px;
     font-family: Menlo, Monaco, Consolas, monospace;
     overflow-x: auto;
     margin: 1.4em 0;

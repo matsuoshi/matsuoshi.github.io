@@ -10,6 +10,46 @@ enableRobotsTXT = true
   description = "モノラルログ: matsuo のざっくりしたブログです"
   author = "matsuoshi"
 
+[[params.social]]
+  name = "linktree"
+  url = "https://linktr.ee/matsuoshi"
+
+[[params.social]]
+  name = "instagram"
+  url = "https://www.instagram.com/matsuoshi/"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/matsuoshi"
+
+[[params.social]]
+  name = "facebook"
+  url = "https://www.facebook.com/matsuoshi"
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/matsuoshi/"
+
+[[params.social]]
+  name = "x"
+  url = "https://x.com/matsuoshi"
+
+[[params.social]]
+  name = "spotify"
+  url = "https://open.spotify.com/user/matsuoshi"
+
+[[params.social]]
+  name = "lastfm"
+  url = "https://www.last.fm/user/matsuoshi"
+
+[[params.social]]
+  name = "mixcloud"
+  url = "https://www.mixcloud.com/matsuoshi/"
+
+[[params.social]]
+  name = "rss"
+  url = "/index.xml"
+
 [taxonomies]
   tag = "tags"
 
